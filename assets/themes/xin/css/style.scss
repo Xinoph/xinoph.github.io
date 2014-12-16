@@ -6,9 +6,12 @@ $main: #138aff;
 
 $page-background: #eaeaea;
 
+/* Images */
+$img-header: "/assets/img/header.png";
+
 
 body {
-	background: $page-background url("assets/img/header.png") no-repeat scroll center top;
+	background: $page-background url("/assets/img/header.png") no-repeat scroll center top;
 	height: 100%;
 }
 
@@ -23,6 +26,10 @@ body {
 
 .navbar .nav {
   float: right; }
+
+.navbar {
+	background: $page-background url($img-header) no-repeat scroll center top;
+}
 
 /* posts index */
 .post > h3.title {
