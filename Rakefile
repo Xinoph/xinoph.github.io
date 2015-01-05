@@ -309,3 +309,9 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+desc "run server"
+task :server do
+  sh "bundle exec jekyll serve"
+end # task :server
+
