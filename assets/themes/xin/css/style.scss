@@ -7,11 +7,11 @@ $main: #138aff;
 $page-background: #eaeaea;
 
 /* Images */
-$img-header: "/assets/img/header.png";
+$img-header: "/assets/images/header.png";
 
 
 body {
-	background: $page-background url("/assets/img/header.png") no-repeat scroll center top;
+	background: $page-background url("/assets/images/header.png") no-repeat scroll center top;
 	height: 100%;
 }
 

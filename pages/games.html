@@ -1,0 +1,19 @@
+---
+layout: page
+title: Games
+description: Game Projects
+group: navigation
+permalink: projects/games/
+---
+{% include JB/setup %}
+
+<div class="projects-grid">
+    {% for post in site.tags.Games %}
+    {% unless post.categories contains "blog" %}
+        <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
+            <div class="project-title">{{ post.title }}</div>
+            <img src="{{ post.tile_image }}" class="title-summary img-responsive" alt="{{ post.title }}">
+        </a>
+    {% endunless %}
+    {% endfor %}
+</div>
