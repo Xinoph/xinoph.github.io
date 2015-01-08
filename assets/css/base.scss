@@ -1,0 +1,188 @@
+---
+---
+
+@import 'colors';
+
+$navbar-height: 52px;
+$header-navbar-offset: 0px;
+$footer-offset: 0px;
+
+html {
+  height: calc(100% - #{$navbar-height});
+}
+
+body {
+  background-color: $page-background;
+  background-image: url("/assets/images/light-matter.png");
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.navbar-inner {
+  background-color: $primary-blue;
+  background-image: none;
+}
+
+a {
+  color: $primary-blue;
+}
+
+.navbar {
+  background-color: $primary-blue;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0px;
+
+  .navbar-toggle, .navbar-toggle:focus {
+    background-color: $gray-5;
+    border-color: $gray-6;
+  }
+
+  .navbar-toggle:hover {
+    background-color: $gray-4;
+  }
+
+  .navbar-toggle > .icon-bar {
+    background-color: $gray-3;
+  }
+
+  .navbar-collapse {
+    border-color: $gray-4;
+  }
+
+  .brand, .nav > li > a {
+    color: #fff;
+    line-height: 30px;
+    margin: 2px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-shadow: none;
+  }
+
+  .nav > .active {
+    background-color: $light-highlight;
+  }
+
+  .brand {
+    max-height: 48px;
+    padding: 10px;
+  }
+
+  .nav > li:focus, .nav > li:hover {
+    background-color: $light-highlight;
+    color: $secondary-blue;
+
+    // scss-lint:disable Indentation, PropertySortOrder
+    -webkit-transition: background 300ms ease;
+       -moz-transition: background 300ms ease;
+        -ms-transition: background 300ms ease;
+         -o-transition: background 300ms ease;
+            transition: background 300ms ease;
+  }
+
+  .brand:focus, .brand:hover {
+    background-color: $light-highlight;
+    color: $secondary-blue;
+
+    // scss-lint:disable Indentation, PropertySortOrder
+    -webkit-transition: background 300ms ease;
+       -moz-transition: background 300ms ease;
+        -ms-transition: background 300ms ease;
+         -o-transition: background 300ms ease;
+            transition: background 300ms ease;
+  }
+}
+
+.footer {
+  min-width: 100%;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.page-header {
+  border: none;
+  margin: 0;
+  margin-top: $header-navbar-offset;
+  padding: 20px 0px 10px;
+}
+
+.content-container {
+  background-color: $content-background;
+  min-height: calc(100% - #{$footer-offset});
+  position: relative;
+}
+
+.container-narrow {
+  margin: 0px auto $header-navbar-offset;
+  max-width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container-narrow {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-narrow {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat) {
+  background-color: $primary-blue;
+  color: $gray-4;
+}
+
+.panel-default {
+  background-color: $primary-blue;
+}
+
+.panel-default > .panel-heading, .panel > .panel-heading, .panel-footer {
+  background-color: $gray-1;
+}
+
+.panel-footer {
+  padding: 0px;
+}
+
+hr {
+  background: $gray-3;
+  border: none;
+  height: 2px;
+  margin: 20px auto;
+  text-align: center;
+  width: 90%;
+}
+
+li > i {
+  font-size: 13pt;
+  opacity: 0.9;
+  position: relative;
+  top: 4px;
+}
+
+.tag-box {
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+
+  .inline li {
+    float: left;
+  }
+
+  a {
+    margin: 2px;
+    padding: 3px 6px;
+    text-transform: none;
+
+    span {
+      font-size: 0.8em;
+      vertical-align: super;
+    }
+  }
+}

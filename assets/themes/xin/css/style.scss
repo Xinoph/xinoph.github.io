@@ -1,21 +1,6 @@
 ---
 ---
 
-/* Colors */
-$main: #138aff;
-
-$page-background: #eaeaea;
-
-/* Images */
-$img-header: "/assets/images/header.png";
-
-
-body {
-	background: $page-background url("/assets/images/header.png") no-repeat scroll center top;
-	height: 100%;
-}
-
-
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -26,10 +11,6 @@ body {
 
 .navbar .nav {
   float: right; }
-
-.navbar {
-	background: $page-background url($img-header) no-repeat scroll center top;
-}
 
 /* posts index */
 .post > h3.title {
