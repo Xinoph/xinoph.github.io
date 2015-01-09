@@ -2,9 +2,11 @@
 layout: page
 title: Categories
 header: Posts By Category
-group: navigation
+
 ---
 {% include JB/setup %}
+
+{% include filter-categories.html %}
 
 <ul class="tag_box inline">
   {% assign categories_list = site.categories %}

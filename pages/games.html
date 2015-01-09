@@ -13,7 +13,7 @@ extra_css: /assets/css/projects.css
     {% unless post.categories contains "blog" %}
         <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
             <div class="project-title">{{ post.title }}</div>
-            <img src="{{ post.tile_image }}" class="title-summary img-responsive" alt="{{ post.title }}">
+            <img src="/assets/images/tiles/{{ post.title }}.png" class="title-summary img-responsive" alt="{{ post.title }}">
         </a>
     {% endunless %}
     {% endfor %}

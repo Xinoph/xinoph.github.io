@@ -4,12 +4,11 @@ title: Radioland
 tagline: Fantasy 3D puzzle platformer using Unity3D.
 description: Fantasy 3D puzzle platformer using Unity3D.
 categories: [projects, games]
-tags: [Games, Unity3D, Art, 3D, C#, Open Source]
+tags: [Games, Unity3D, Art, 3D, Code, C#, Maya, Photoshop, Substance Designer, Open Source]
 permalink: projects/games/radioland/
 
 extra_css: /assets/css/projects.css
 
-tile_image: /assets/images/Radioland/Radioland-poster.png
 screenshots: [[hello, Gunther meets the speech bubble],
          [lowGravity, Gunther uses a low gravity jump to reach far away islands],
            [highJump, Gunther uses a high jump to get a better view],
@@ -55,12 +54,12 @@ This game was the result of three months of work in <a href="http://www.arts.rpi
 
 <h3>Team Members</h3>
 
-* [Neale Johnson](http://diokatsu.wix.com/portfolio/): Writer
-* [Annie Sardelis](http://asardelis3.wix.com/portfolio/): Artist
+* [{{ site.contributors.neale.name }}]({{ site.contributors.neale.url }}): Writer
+* [{{ site.contributors.annie.name }}]({{ site.contributors.annie.url }}): Artist
 * [Brian Tam]({{ HOME_PATH }}): Artist
-* [Tim Terrezza](https://github.com/timmyterrezza) : Programmer
-* [Scott Todd](http://scotttodd.github.io/): Programmer
-* [Matt Wellins](http://mattwellins.com/): Composer
+* [{{ site.contributors.tim.name }}]({{ site.contributors.tim.url }}): Programmer
+* [{{ site.contributors.scott.name }}]({{ site.contributors.scott.url }}): Programmer
+* [{{ site.contributors.matt.name }}]({{ site.contributors.matt.url }}): Composer
 
 <h3>My Contributions</h3>
 

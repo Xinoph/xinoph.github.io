@@ -15,6 +15,25 @@ author :
   email : brian.w.tam@gmail.com
   github : Xinoph
 
+contributors :
+  scott:
+    name: Scott Todd
+    url: http://scotttodd.github.io
+  annie:
+    name: Annie Sardelis
+    url: http://asardelis3.wix.com/portfolio/
+  neale:
+    name: Neale Johnson
+    url: http://diokatsu.wix.com/portfolio/
+  matt:
+    name: Matt Wellins
+    url: http://mattwellins.com/
+  tim:
+    name: Tim Terrezza
+    url: https://github.com/timmyterrezza/
+  brennan:
+    name: Brennan Cushin
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls

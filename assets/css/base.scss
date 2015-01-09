@@ -5,7 +5,7 @@
 
 $navbar-height: 52px;
 $header-navbar-offset: 0px;
-$footer-offset: 0px;
+$footer-offset: 4px;
 
 html {
   height: calc(100% - #{$navbar-height});
