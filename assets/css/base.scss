@@ -21,6 +21,7 @@ body {
 .navbar-inner {
   background-color: $primary-blue;
   background-image: none;
+  border: none;
 }
 
 a {
@@ -152,7 +153,7 @@ a {
 }
 
 hr {
-  background: $gray-3;
+  background: $primary-blue;
   border: none;
   height: 2px;
   margin: 20px auto;

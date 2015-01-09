@@ -1,6 +1,6 @@
 ---
 layout: post-noDate
-title: SpaceDoggity
+title: Space Doggity
 tagline: Animation about a space corgi's descent onto Earth.
 description: Animation about a space corgi's descent onto Earth.
 categories: [projects, 3d]

@@ -1,35 +1,43 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Home
+tagline: Brian Tam's Blog & Portfolio
 permalink: /
+
+extra_css: /assets/css/projects.css
+
+featured: [Radioland, Space Doggity, Senior Art Thesis, 
+          Sarah, Space Luddites, Siristi]
+
 ---
 {% include JB/setup %}
 
-Please excuse the WIP-look of this site while I update.
+## Featured Works
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+<div class="projects-grid">
+    {% for feat in page.featured %}
+      {% for post in site.posts %}
+      {% if feat == post.title %}
+          <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
+              <div class="project-title">{{ post.title }}</div>
+              <img src="/assets/images/tiles/{{ post.title }}.png" class="title-summary img-responsive" alt="{{ post.title }}">
+          </a>
+      {% endif %}
+      {% endfor %}
+    {% endfor %}
+</div>
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
-    
-## Sample Posts
+## About
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+<span style="clear:both"></span>
 
-    $ rm -rf _posts/core-samples
+<img src="/assets/images/brian.png" class="btn btn-default project-container" style="float: left; margin-right: 30px; padding: 12px;">
 
-Here's a sample "posts list".
+<br><br>
+<h4>I am an undergraduate student at Rensselaer Polytechnic Institute studying game design and electronic art.</h4>
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
-## To-Do
+As a Senior, I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together. <br><br> You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/resume/).
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
+<br><br>
 
