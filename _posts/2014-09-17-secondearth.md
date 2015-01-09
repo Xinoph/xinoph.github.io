@@ -21,9 +21,7 @@ screenshots: [[se01, A dead body in the sewers!],
 
 
 <div class="video-wrapper">
-    <video width="100%" controls>
-        <source src="/assets/images/SecondEarth/SecondEarth.mp4" type="video/mp4">
-    </video>
+    <iframe src="//player.vimeo.com/video/116315433" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 </div>
 
 
