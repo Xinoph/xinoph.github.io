@@ -1,0 +1,20 @@
+---
+layout: page
+title: Code
+description: Code Projects
+group: navigation
+permalink: projects/code/
+extra_css: /assets/css/projects.css
+---
+{% include JB/setup %}
+
+<div class="projects-grid">
+    {% for post in site.tags.Code %}
+    {% unless post.categories contains "blog" %}
+        <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
+            <div class="project-title">{{ post.title }}</div>
+            <img src="/assets/images/tiles/{{ post.title }}.png" class="title-summary img-responsive" alt="{{ post.title }}">
+        </a>
+    {% endunless %}
+    {% endfor %}
+</div>

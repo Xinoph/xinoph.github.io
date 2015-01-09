@@ -5,6 +5,11 @@ description: 3D Projects
 group: navigation
 permalink: projects/3d/
 extra_css: /assets/css/projects.css
+
+images: [[kwah-action, Kwah - action shot. Modeled & rendered with Maya.],
+		[kwah, Kwah turn around. Modeled & rendered with Maya.],
+		[perrystilllife, Still life - Perry's friends. Modeled & rendered with Maya.],
+		]
 ---
 {% include JB/setup %}
 
@@ -18,3 +23,20 @@ extra_css: /assets/css/projects.css
     {% endunless %}
     {% endfor %}
 </div>
+
+{% assign images_prefix = "/assets/images/3D/" %}
+
+<div class="projects-grid" id="slideshow" style="text-align: center;">
+    {% for img in page.images %}
+        <a href="{{images_prefix}}{{img[0]}}.png" class="btn btn-default project-container">
+            <img src="{{images_prefix}}{{img[0]}}-tn.png" class="img-responsive" alt="{{img[1]}}">
+        </a>
+    {% endfor %}
+</div>
+
+<script>
+    $('#slideshow').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+<br><br>
+

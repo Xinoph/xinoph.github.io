@@ -7,7 +7,7 @@ categories: [projects, games]
 tags: [Games, Unity3D, Art, 3D, Maya, Photoshop, C#, Code]
 permalink: projects/games/spaceluddites/
 
-date: 2014-05-07
+real_date: 2014-05-07
 
 extra_css: /assets/css/projects.css
 
