@@ -27,6 +27,42 @@ featured: [Radioland, Space Doggity, Senior Art Thesis,
     {% endfor %}
 </div>
 
+<hr style="width: 50%;">
+
+## Latest Blog Post
+
+{% assign posts = site.categories.blog %}
+
+{% assign post = posts[0] %}
+
+  <h3 style="margin-bottom: 0px;" id="{{ post.title | replace:' ','-'}}"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+
+  <h5 style="margin-top: 0px; margin-left: 30px;"> Posted {{ post.date | date_to_long_string }}</h5>
+
+  {{ post.excerpt }}
+
+  <a href="{{ post.url }}" style="margin-left: 30px;">&raquo; Read more</a>
+  <br><br>
+
+  {% unless post.categories == empty %}
+  <ul class="tag_box inline">
+    <li><i class="icon-folder-open"></i></li>
+    {% assign categories_list = post.categories %}
+    {% include JB/categories_list %}
+  </ul>
+  {% endunless %}  
+
+  {% unless post.tags == empty %}
+  <ul class="tag_box inline">
+    <li><i class="icon-tags"></i></li>
+    {% assign tags_list = post.tags %}
+    {% include JB/tags_list %}
+  </ul>
+  {% endunless %}  
+
+
+<hr style="width: 50%;">
+
 ## About
 
 <span style="clear:both"></span>
