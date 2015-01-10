@@ -51,7 +51,7 @@ Space Luddites is a multiplayer, 3D, sidescrolling beat-em-up set in outer space
 
 This game was the result of three months of work in <a href="http://gamedev2-s14.wp.rpi.edu/">Game Development 2</a>. We used Unity3D with C#.
 
-Play the game in your browser <a href="/assets/projects/space-luddites/web-build.html">here</a>! (Unity Web Player Plugin required)
+Play the game in your browser <a href="http://scotttodd.github.io/assets/projects/space-luddites/web-build.html">here</a>! (Unity Web Player Plugin required)
 
 Check out our <a href="http://spaceluddites.weebly.com/">website</a> for more images and information!
 
