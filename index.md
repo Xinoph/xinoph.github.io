@@ -37,7 +37,9 @@ featured: [Radioland, Space Doggity, Senior Art Thesis,
 <h4>I am an undergraduate student at Rensselaer Polytechnic Institute studying game design and electronic art.</h4>
 
 
-As a Senior, I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together. <br><br> You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/resume/).
+As a Senior, I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together.
+<br><br>
+You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/resume/).
 
 <br><br>
 

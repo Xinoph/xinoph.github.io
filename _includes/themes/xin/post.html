@@ -1,4 +1,4 @@
-<div class="page-header">
+<div class="page-header" id="top">
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
 
@@ -28,6 +28,11 @@
   {% endunless %}  
 
     <hr>
+    {{ page.title | replace:' ','-'}}
+    <a href="/blog/#{{ page.title | replace:' ','-'}}">&raquo; Return to index</a>
+    <a href="#top" style="float: right;">&raquo; Return to the top</a>
+
+    {% comment %}
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -43,9 +48,9 @@
       {% endif %}
       </ul>
     </div>
-    {% comment %}
+    {% endcomment %}
     <hr>
     {% include JB/comments %}
-    {% endcomment %}
+    
   </div>
 </div>

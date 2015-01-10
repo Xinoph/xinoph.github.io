@@ -152,7 +152,7 @@ a {
   padding: 0px;
 }
 
-hr {
+hr, .container-narrow>hr {
   background: $primary-blue;
   border: none;
   height: 2px;

@@ -97,7 +97,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : disqus
     disqus :
       short_name : jekyllbootstrap
     livefyre :
@@ -149,3 +149,5 @@ sass:
     style: :compressed
     sass_dir: assets/css
     
+
+excerpt_separator: <!--more-->
