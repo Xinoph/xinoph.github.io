@@ -5,7 +5,7 @@ tagline: 3D high-detail character model and sculpts.
 description: 3D high-detail character model and sculpts.
 categories: [projects, 3d]
 tags: [Art, 3D, Maya, Photoshop, zBrush, Substance Designer, Substance Painter, Marmoset Toolbag]
-permalink: projects/3d/cs/
+permalink: projects/3d/seniorartthesis/
 
 real_date: 2014-12-04
 
