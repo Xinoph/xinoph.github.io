@@ -46,7 +46,7 @@ As part of the surprise and suspense themes, the timer displayed may not always 
 
 * [{{ site.contributors.scott.name }}]({{ site.contributors.scott.url }}): Lead programmer
 * [Brian Tam]({{ HOME_PATH }}): User Interface and mechanics programmer
-* [Ronald Sardarian](sardar@rpi.edu): Programmer
+* [Ronald Sardarian](mailto:sardar@rpi.edu): Programmer
 * [Bombadeer studios](http://www.bombadeerstudios.com/): Music
 * [http://www.freesfx.co.uk](http://www.freesfx.co.uk): Sound Effects
 
