@@ -7,7 +7,7 @@ permalink: /
 extra_css: /assets/css/projects.css
 
 featured: [Radioland, Space Doggity, Senior Art Thesis, 
-          Sarah, Space Luddites, Siristi]
+          Sarah, Space Luddites]
 
 ---
 {% include JB/setup %}
@@ -25,6 +25,12 @@ featured: [Radioland, Space Doggity, Senior Art Thesis,
       {% endif %}
       {% endfor %}
     {% endfor %}
+
+    <a href="/projects/2d" class="btn btn-default project-container" title="Behind a Mask: Charcoal, Acrylic, and Newspaper on Canvas">
+              <div class="project-title">Behind a Mask</div>
+              <img src="/assets/images/tiles/BehindAMask.png" class="title-summary img-responsive" alt="Behind a Mask">
+          </a>
+
 </div>
 
 <hr style="width: 50%;">
