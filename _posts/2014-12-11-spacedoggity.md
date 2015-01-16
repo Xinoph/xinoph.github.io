@@ -9,6 +9,11 @@ permalink: projects/3d/spacedoggity/
 
 extra_css: /assets/css/projects.css
 
+screenshots: [[MajorTom, Concept for the space corgi, Major Tom],
+              [Storyboard2, Second version of storyboards, closer to finalzed animation],
+              [Storyboard, Initial storyboards]
+              ]
+
 ---
 {% include JB/setup %}
 
@@ -16,10 +21,24 @@ extra_css: /assets/css/projects.css
 <div class="video-wrapper">
     <video width="100%" controls>
         <source src="/assets/images/SpaceDoggity/SpaceDoggity.mp4" type="video/mp4">
+        <source src="/assets/images/SpaceDoggity/SpaceDoggity.webm" type="video/webm">
     </video>
 </div>
 
 <img src="/assets/images/SpaceDoggity/AnimationBreakdown.png">
+
+{% assign images_prefix = "/assets/images/SpaceDoggity/" %}
+{% assign thumbnails = true %}
+
+<div class="project-images" id="slideshow">
+{% for img in page.screenshots %}
+    <a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshow').photobox('a', {history:false, time:0, counter:false});
+</script>
 
 <h3>Overview</h3>
 
