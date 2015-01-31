@@ -11,10 +11,14 @@ real_date: 2014-12-04
 
 extra_css: /assets/css/projects.css
 
-screenshots: [[pbr-test2, Full 3D model, .png, false],
-                [11-30-face, Detail shots of face and leg, .png, true],
-                [skirtmail-11-30, Wireframe and polycount of model, .png, true],
-                [turn-11-30, Texture for the head, .gif, false]
+screenshots: [
+[1-31-body, Body, .png, false],
+[1-31-face, Body, .png, true],
+[1-31-turn, Turnaround, .gif, false],
+[pbr-test2, Old concept - Full 3D model, .png, false],
+[11-30-face, Old concept - Detail shots of face and leg, .png, true],
+[skirtmail-11-30, Old concept - Detail shot of skirt, .png, true],
+[turn-11-30, Old concept - Turnaround, .gif, false]
               ]
 ---
 {% include JB/setup %}
