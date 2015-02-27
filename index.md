@@ -81,7 +81,7 @@ featured: [Radioland, Space Doggity, Wiccan,
 
 As a Senior, I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together.
 <br><br>
-You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/resume/).
+You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/assets/BrianTam-Resume.pdf).
 
 <br><br>
 
