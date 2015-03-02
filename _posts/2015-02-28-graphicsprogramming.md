@@ -10,9 +10,9 @@ permalink: projects/code/graphicsProgramming/
 extra_css: /assets/css/projects.css
 
 images: [
-    [incompressibleFluid, Incompressible fluid simulation using methods described by Foster and Metaxas, true],
+    [FluidIncompressible, Incompressible fluid simulation using methods described by Foster and Metaxas, true, true],
     [subdivisionBunny, Loop Subdivision Rules applied to the Stanford Bunny, true],
-    [bunnyByeBye, Edge collapse operations performed on the Stanford Bunny, true],
+    [BunnyByeBye, Edge collapse operations performed on the Stanford Bunny, true, true],
     [silk, Cloth simulation of silk using methods described by Provot],
     [tablecloth-forces, Cloth simulation of a table cloth with force visualization],
     [triangle, IFS of the Sierpinski Triangle],
@@ -27,17 +27,20 @@ images: [
 <div class="project-images" id="slideshow">
     {% for img in page.images %}
     	{% if img[2] %}
+            {% if img[3] %}
+            <a href="{{images_prefix}}{{img[0]}}.gif" class="project-container">
+            <video width="100%" controls autoplay="autoplay" loop>
+                <source src="{{images_prefix}}{{img[0]}}.webm" type="video/webm"  class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px">
+            </video>
+            {% else %}
     		<a href="{{images_prefix}}{{img[0]}}.gif" class="project-container">
-            <img src="{{images_prefix}}{{img[0]}}.gif" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px"
+            <img src="{{images_prefix}}{{img[0]}}.gif" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px">
+            {% endif %}
     	{% else %}
         <a href="{{images_prefix}}{{img[0]}}.png" class="project-container">
-            <img src="{{images_prefix}}{{img[0]}}.png" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px"
+            <img src="{{images_prefix}}{{img[0]}}.png" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px">
         {% endif %}
         
-        {% if img[3] != null %}
-        	 data-pb-captionLink="{{img[3]}}"
-        {% endif %}
-        >
         </a>
     {% endfor %}
 </div>
