@@ -10,12 +10,12 @@ permalink: projects/code/graphicsProgramming/
 extra_css: /assets/css/projects.css
 
 images: [
+    [raytrace-shadowsAndAA, "Raytracing with reflections, soft shadows, and antialiasing"],
     [incompressibleFluid, Incompressible fluid simulation using methods described by Foster and Metaxas, true],
     [subdivisionBunny, Loop Subdivision Rules applied to the Stanford Bunny, true],
     [bunnyByeBye, Edge collapse operations performed on the Stanford Bunny, true],
     [silk, Cloth simulation of silk using methods described by Provot],
-    [tablecloth-forces, Cloth simulation of a table cloth with force visualization],
-    [triangle, IFS of the Sierpinski Triangle],
+    [tablecloth-forces, Cloth simulation of a table cloth with force visualization]
               ]
 ---
 {% include JB/setup %}
@@ -27,7 +27,7 @@ images: [
 <div class="project-images" id="slideshow">
     {% for img in page.images %}
     	{% if img[2] %}
-    		<a href="{{images_prefix}}{{img[0]}}.gif" class="project-container">
+    	    <a href="{{images_prefix}}{{img[0]}}.gif" class="project-container">
             <img src="{{images_prefix}}{{img[0]}}.gif" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px"
     	{% else %}
         <a href="{{images_prefix}}{{img[0]}}.png" class="project-container">

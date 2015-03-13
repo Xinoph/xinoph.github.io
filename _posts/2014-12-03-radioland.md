@@ -24,10 +24,7 @@ screenshots: [[hello, Gunther meets the speech bubble],
 
 
 <div class="video-wrapper">
-    <video width="100%" controls>
-        <source src="/assets/images/Radioland/RadiolandTrailer.mp4" type="video/mp4">
-        <source src="/assets/images/Radioland/RadiolandTrailer.webm" type="video/webm">
-    </video>
+    <iframe width="100%" src="https://www.youtube.com/embed/HbTQizZzDiM?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
@@ -49,6 +46,8 @@ screenshots: [[hello, Gunther meets the speech bubble],
 Radioland is a single player 3D third-person puzzle platformer set on a chain of floating islands. The player controls Gunther as he explores four season-themed levels. As the player navigates through jumping challenges, they search for and collect audio logs. These audio logs reveal snippets of four narratives each focusing on communication.
 
 This game was the result of three months of work in <a href="http://www.arts.rpi.edu/~ruiz/EGDFall2014/Experimental.htm">Experimental Game Design</a> with continued development in the spring of 2015. We used Unity3D with C#.
+
+Check out <a href="http://radioland.github.io/">Radioland's website</a>!
 
 
 <div class="github-widget" data-repo="Radioland/RadiolandGame"></div>
