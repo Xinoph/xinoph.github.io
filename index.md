@@ -6,8 +6,8 @@ permalink: /
 
 extra_css: /assets/css/projects.css
 
-featured: [Radioland, Space Doggity, Wiccan, 
-          Sarah, Space Luddites]
+featured: [Radioland, Senior Art Thesis, Space Doggity, 
+          Wiccan, Space Luddites]
 
 ---
 {% include JB/setup %}
