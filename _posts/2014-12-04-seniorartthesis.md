@@ -12,11 +12,13 @@ real_date: 2014-12-04
 extra_css: /assets/css/projects.css
 
 screenshots: [
-[1-31-body, Body, .png, false],
-[1-31-face, Body, .png, true],
-[1-31-turn, Turnaround, .gif, false],
+[3-24-body, Finalized model & refined textures of body, .png, false],
+[3-24-face, Closeup of the face, .png, true],
+[1-31-body, New concept body, .png, false],
+[1-31-face, New concept face, .png, true],
+[1-31-turn, New concept turnaround, .gif, false],
 [pbr-test2, Old concept - Full 3D model, .png, false],
-[11-30-face, Old concept - Detail shots of face and leg, .png, true],
+[11-30-face, Old concept - Detail shots of face, .png, true],
 [skirtmail-11-30, Old concept - Detail shot of skirt, .png, true],
 [turn-11-30, Old concept - Turnaround, .gif, false]
               ]
@@ -28,11 +30,11 @@ screenshots: [
 
 <h3>Overview</h3>
 
-A work in progress piece towards achieving 3D photorealism. This page will be updated as more progress is made. 
+A work in progress piece towards achieving 3D photorealism. This page will be updated as more progress is made.
 
 This piece will be shown along with other RPI senior art theses in a gallery in April 2015. 
 
-Modeled in Maya and zBrush. Textured in Substance Painter and Photoshop. Rendered using Marmoset Toolbag.
+Modeled in Maya and zBrush. Textured using Substance Designer, Substance Painter, and Photoshop. Rendered using Marmoset Toolbag.
 
 <div id="slideshow" style="text-align: center;">
 {% for img in page.screenshots %}
