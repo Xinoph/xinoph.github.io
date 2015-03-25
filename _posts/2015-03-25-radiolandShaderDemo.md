@@ -25,8 +25,9 @@ screenshots: [
 <div class="template-wrap clear">
     <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="587px" width="940px"></canvas>
       <div class="gllogo"></div>
+      <!--
       <div class="fullscreen"><img src="/assets/RadiolandShaderDemo/TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="gltitle">Radioland Shader Demo</div>
+      <div class="gltitle">Radioland Shader Demo</div>-->
     </div>
   <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
 <script type='text/javascript'>
