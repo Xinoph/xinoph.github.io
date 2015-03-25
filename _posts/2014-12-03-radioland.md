@@ -74,6 +74,7 @@ Modeling, rigging, animation, visual effects, shaders, props, and HUD elements
 <br><br>
 
 * Used Unity's ShaderLab language write shaders that...
+    *  Combine vertex colors, physically based rendering, and custom shading colors to create a unique effect. [Shader Demo](/projects/games/radioland/shaderDemo)
     *  Use a toon shader that gives artists plenty of control over how light affects different materials. 
     *  Use an object space tri-planar algorithm to apply textures to the islands. 
     *  Simulates a chrome-like metal based on viewing angle 

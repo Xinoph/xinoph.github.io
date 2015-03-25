@@ -28,6 +28,10 @@
       <link rel="stylesheet" href="{{ css_name }}" type="text/css" media="all">
     {% endfor %}
 
+    {% for script_name in page.extra_script %}
+      <script src="{{ script_name }}"></script>
+    {% endfor %}
+
     <!-- Le fav and touch icons -->
   <!-- Fav and touch icons, thanks to http://realfavicongenerator.net/ -->
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicon/apple-touch-icon-57x57.png">
