@@ -1,11 +1,11 @@
 ---
 layout: post-noDate
-title: Senior Art Thesis
+title: Zhu FeiTian
 tagline: 3D high-detail character model and sculpts.
 description: 3D high-detail character model and sculpts.
 categories: [projects, 3d]
 tags: [Art, 3D, Maya, Photoshop, zBrush, Substance Designer, Substance Painter, Marmoset Toolbag]
-permalink: projects/3d/seniorartthesis/
+permalink: projects/3d/zhufeitian/
 
 real_date: 2014-12-04
 
@@ -30,9 +30,9 @@ screenshots: [
 
 <h3>Overview</h3>
 
-A work in progress piece towards achieving 3D photorealism. This page will be updated as more progress is made.
+A work in progress piece towards achieving 3D photorealism.
 
-This piece will be shown along with other RPI senior art theses in a gallery in April 2015. 
+This piece will be shown along with other RPI senior art theses in a gallery in April 2015. This page will be updated again after the [gallery show](/blog/2015/04/06/iridesence/).
 
 Modeled in Maya and zBrush. Textured using Substance Designer, Substance Painter, and Photoshop. Rendered using Marmoset Toolbag.
 

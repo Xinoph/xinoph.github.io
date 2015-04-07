@@ -6,7 +6,7 @@ permalink: /
 
 extra_css: /assets/css/projects.css
 
-featured: [Radioland, Senior Art Thesis, Space Doggity, 
+featured: [Radioland, Zhu FeiTian, Space Doggity, 
           Wiccan, Space Luddites]
 
 ---
