@@ -9,15 +9,15 @@ permalink: projects/games/radioland/
 
 extra_css: /assets/css/projects.css
 
-screenshots: [[hello, Gunther meets the speech bubble],
-         [lowGravity, Gunther uses a low gravity jump to reach far away islands],
-           [highJump, Gunther uses a high jump to get a better view],
-              [metal, Gunther uses metal skin to resist strong winds],
-             [bottle, Gunther found a message in a bottle],
-              [phone, Gunther found a phone with an unread text],
-             [leaves, Gunther plays around in the leaves],
-         [radioTower, Gunther reached the radio tower],
-              [dance, Gunther dances with the critters]
+screenshots: [
+[01-Dance, Gunther dancing in Radioland],
+[02-Exploring, "Gunther exploring Radioland's changing world"],
+[03-findingARadioTower, Gunther finds a radio tower to bring back radio],
+[04-TalkingToCritter, Gunther talks to a critter],
+[05-ScaryJumps, Gunther attempts some scary jumps],
+[06-birdsAndTower, Gunther dances with baby birds in front of a tall tower],
+[07-flowerHat, "Gunther finds a flower hat. Doesn't he look great?"],
+[08-audioVisualizers, The world responds to music],
               ]
 ---
 {% include JB/setup %}
@@ -43,9 +43,9 @@ screenshots: [[hello, Gunther meets the speech bubble],
 
 <h3>Overview</h3>
 
-Radioland is a single player 3D third-person puzzle platformer set on a chain of floating islands. The player controls Gunther as he explores four season-themed levels. As the player navigates through jumping challenges, they search for and collect audio logs. These audio logs reveal snippets of four narratives each focusing on communication.
+Join Gunther in Radioland, where you guide our lovable hero in helping the critters of Radioland get life back from the silence that has surrounded them. In this 3D puzzle platformer, use the power of radio to traverse colorful environments, solve puzzles, and collect crazy outfits. Turn on the radio towers, move the environment, complete the levels and guide Radioland back to a brighter future!
 
-This game was the result of three months of work in <a href="http://www.arts.rpi.edu/~ruiz/EGDFall2014/Experimental.htm">Experimental Game Design</a> with continued development in the spring of 2015. We used Unity3D with C#.
+This game was the result of three months of work in <a href="http://www.arts.rpi.edu/~ruiz/EGDFall2014/Experimental.htm">Experimental Game Design</a> with continued development in the spring of 2015. We used Unity3D with C#, Maya, and Photoshop. We stream live internet radio using a third-party DLL called BASS from Un4seen Developments. Notable programming feats include audio spectrum visualization, spline editor tools supporting mesh generation, a triggered event/effects system, editor scripting, and physics using kinematic rigidbodies. Our art style is achieved through ShaderLab shaders which we wrote for tri-planar texture mapping and vertex colored PBR.
 
 Check out <a href="http://radioland.github.io/">Radioland's website</a>!
 
