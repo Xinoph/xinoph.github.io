@@ -4,7 +4,7 @@ title: Zhu FeiTian
 tagline: 3D high-detail character model and sculpts.
 description: 3D high-detail character model and sculpts.
 categories: [projects, 3d]
-tags: [Art, 3D, Maya, Photoshop, zBrush, Substance Designer, Substance Painter, Marmoset Toolbag]
+tags: [Art, 3D, Maya, Photoshop, ZBrush, Substance Designer, Substance Painter, Marmoset Toolbag]
 permalink: projects/3d/zhufeitian/
 
 real_date: 2014-12-04
@@ -66,7 +66,7 @@ A character study towards achieving a realistic-style character model and render
 
 Zhu FeiTian (朱飛天) is a warrior who hails from the most western regions of Tang Dynasty China (around 700 AD). Born with red hair and pale skin, people saw her as possessed by an evil spirit and took her to a temple to have it exorcised. When the monks approached the baby with candles lit by sacred fires, the dancing flames transfixed FeiTian. She reached towards them and grabbed one of the fires. Instead of burning the flesh, the fire traveled up FeiTian's arms, leaving marks but otherwise not harming the baby. The monks witnessed this in awe and concluded that it was not an evil spirit that was within her, but quite the opposite. The monks raised FeiTian to be a spiritual warrior, combining the graceful art of the sword with the beautiful power of sacred fire to fend off evil.
 
-Modeled in Maya and zBrush. <br>
+Modeled in Maya and ZBrush. <br>
 Textured using Substance Designer, Substance Painter, and Photoshop. <br>
 Rendered in real-time using Unity3D with Marmoset Skyshop. <br>
 
