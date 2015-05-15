@@ -10,12 +10,13 @@ permalink: projects/code/graphicsProgramming/
 extra_css: /assets/css/projects.css
 
 images: [
-    [raytrace-shadowsAndAA, "Raytracing with reflections, soft shadows, and antialiasing"],
-    [incompressibleFluid, Incompressible fluid simulation using methods described by Foster and Metaxas, true],
-    [subdivisionBunny, Loop Subdivision Rules applied to the Stanford Bunny, true],
-    [bunnyByeBye, Edge collapse operations performed on the Stanford Bunny, true],
-    [silk, Cloth simulation of silk using methods described by Provot],
-    [tablecloth-forces, Cloth simulation of a table cloth with force visualization]
+[photonMapping-reflectiveSphere, "Photon mapping on diffuse and reflective surfaces to illustrate color bleeding"],
+[raytrace-shadowsAndAA, "Raytracing with reflections, soft shadows, and antialiasing"],
+[incompressibleFluid, Incompressible fluid simulation using methods described by Foster and Metaxas, true],
+[subdivisionBunny, Loop Subdivision Rules applied to the Stanford Bunny, true],
+[bunnyByeBye, Edge collapse operations performed on the Stanford Bunny, true],
+[silk, Cloth simulation of silk using methods described by Provot],
+[tablecloth-forces, Cloth simulation of a table cloth with force visualization]
               ]
 ---
 {% include JB/setup %}
