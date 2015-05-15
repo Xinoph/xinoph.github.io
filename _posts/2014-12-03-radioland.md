@@ -13,11 +13,12 @@ screenshots: [
 [01-Dance, Gunther dancing in Radioland],
 [02-Exploring, "Gunther exploring Radioland's changing world"],
 [03-findingARadioTower, Gunther finds a radio tower to bring back radio],
-[04-TalkingToCritter, Gunther talks to a critter],
 [05-ScaryJumps, Gunther attempts some scary jumps],
 [06-birdsAndTower, Gunther dances with baby birds in front of a tall tower],
 [07-flowerHat, "Gunther finds a flower hat. Doesn't he look great?"],
 [08-audioVisualizers, The world responds to music],
+[levelSelect, Level select menu featuring radio tuning mechanic],
+[cosmetics, Cosmetics menu showing off different unlockable outfits!],
               ]
 ---
 {% include JB/setup %}
@@ -63,14 +64,14 @@ Check out <a href="http://radioland.github.io/">Radioland's website</a>!
 
 <h3>My Contributions</h3>
 
-Modeling, rigging, animation, visual effects, shaders, props, and HUD elements
+Modeling, rigging, animation, visual effects, shaders, props, and UI elements
 
 * Used Maya, Photoshop, and Substance Designer to...
     * Create models for the critters (resistor, capacitor, solenoid, DIP, birb), the radio tower, the waterfall island, the cassette, phone, and message in a bottle. 
     * Rigged Gunther and the critters. 
     * Animated the critters to have idle, dance, and interaction animations. 
     * Create environmental props such as wires and crystals as well as tiling environmental textures for each season. 
-    * Create the HUD elements. 
+    * Create the UI elements. 
 <br><br>
 
 * Used Unity's ShaderLab language write shaders that...
@@ -78,6 +79,12 @@ Modeling, rigging, animation, visual effects, shaders, props, and HUD elements
     *  Use a toon shader that gives artists plenty of control over how light affects different materials. 
     *  Use an object space tri-planar algorithm to apply textures to the islands. 
     *  Simulates a chrome-like metal based on viewing angle 
+<br><br>
+
+* Designed and implemented UI elements and menus
+    * Radio tuner during game play
+    * Level select menu that features radio tunic mechanic
+    * Cosmetic menu to showcase different outfits
 <br><br>
 
 * Used C# and Shuriken to design and implement visual effects including 
