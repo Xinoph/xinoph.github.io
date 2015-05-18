@@ -48,8 +48,11 @@ Join Gunther in Radioland, where you guide our lovable hero in helping the critt
 
 This game was the result of three months of work in <a href="http://www.arts.rpi.edu/~ruiz/EGDFall2014/Experimental.htm">Experimental Game Design</a> with continued development in the spring of 2015. We used Unity3D with C#, Maya, and Photoshop. We stream live internet radio using a third-party DLL called BASS from Un4seen Developments. Notable programming feats include audio spectrum visualization, spline editor tools supporting mesh generation, a triggered event/effects system, editor scripting, and physics using kinematic rigidbodies. Our art style is achieved through ShaderLab shaders which we wrote for tri-planar texture mapping and vertex colored PBR.
 
+Radioland won Second Place in the "Vicarious Visions Student Challenge" at <a href="http://gamefest.rpi.edu/">Rensselaer Polytechnic Institute's GameFest 2015</a>.
+
 Check out <a href="http://radioland.github.io/">Radioland's website</a>!
 
+<h3>Github Repository</h3>
 
 <div class="github-widget" data-repo="Radioland/RadiolandGame"></div>
 
