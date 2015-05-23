@@ -134,7 +134,9 @@ try {
 <h3>Overview</h3>
 
 This demo compares four different shaders, the middle two of which I wrote using Unity's ShaderLab language.<br>
-The WebGL demo differs slightly from in-game due to some web optimization. Refer to the screenshots for a more accurate representation.
+
+<b>Note:</b> The WebGL demo differs slightly from in-game due to some web optimization, or it might not run in your browser.<br>
+Please view using <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or refer to the screenshots for a more accurate representation.
 
 <h3>Description</h3>
 
@@ -145,7 +147,7 @@ The "Vert PBR" shader combines vertex coloring with physically based rendering. 
 The "Vert PBR with Colored Shading" gives the artists more control over how light interacts with the model to create a more unique style. Here, the artists can tint the model based on how much light versus how much shadow it is receiving.
 For example, if there is a red light shining on the model, then the parts hit by the light would be tinted red and the parts that are in shadow could be tinted blue.
 
-As comparison, on the far right is Unity's standard shader with vertex colors added in. 
+As comparison, on the far right is Unity's default "Standard" shader. 
 
 <br>
 Check out <a href="http://radioland.github.io/">Radioland's website</a>!
