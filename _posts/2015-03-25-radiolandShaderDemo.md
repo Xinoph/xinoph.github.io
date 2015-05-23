@@ -121,8 +121,9 @@ try {
 {% assign thumbnails = true %}
 
 <div class="project-images" id="slideshow">
+    <a href="/assets/images/Radioland/shaderDemo.gif"><img src="/assets/images/Radioland/shaderDemo.gif" width="200px" alt="Animation of the shader in action" class="img-responsive"></a>
 {% for img in page.screenshots %}
-    <a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a>
+    <a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" width="200px" class="img-responsive"></a>
 {% endfor %}
 </div>
 
