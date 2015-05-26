@@ -25,7 +25,7 @@ screenshots: [
 
 
 <div class="video-wrapper">
-    <iframe width="100%" src="https://www.youtube.com/embed/HbTQizZzDiM?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" src="https://www.youtube.com/embed/XRVRkRMiYZw" frameborder="0" allowfullscreen></iframe>
 </div>
 
 
