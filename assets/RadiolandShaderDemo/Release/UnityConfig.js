@@ -50,19 +50,19 @@ function CompatibilityCheck()
     // Check for WebGL. Allow running without WebGL on development players for running tests on build farm.
     if (!0 && !hasWebGL)
     {
-        if(!confirm("You need a browser which supports WebGL to run this content. Try installing Firefox. Press Ok if you wish to continue anyway."));
-            window.history.back();                
+        alert("You need a browser which supports WebGL to run this content. Try installing Firefox.");
+        window.location="/projects/games/radioland/shaderNoDemo/";                
     }
     // Show warnings if needed.
     else if (mobile)
     {
         if (!confirm("Please note that Unity WebGL is not currently supported on mobiles. Press Ok if you wish to continue anyway."))
-            window.history.back();        
+            window.location="/projects/games/radioland/shaderNoDemo/";     
     }
     else if (browser.indexOf("Firefox") == -1 && browser.indexOf("Chrome") == -1 && browser.indexOf("Safari") == -1)
     {
         if (!confirm("Please note that your browser is not currently supported for this Unity WebGL content. Try installing Firefox, or press Ok if you wish to continue anyway."))
-            window.history.back();
+            window.location="/projects/games/radioland/shaderNoDemo/";  
     }
 }
 
@@ -74,8 +74,10 @@ window.onerror = function UnityErrorHandler(err, url, line)
     console.log ("Invoking error handler due to\n"+err);
     if (typeof dump == 'function')
         dump ("Invoking error handler due to\n"+err);
-   if (didShowErrorMessage)
+   if (didShowErrorMessage) {
+        window.location="/projects/games/radioland/shaderNoDemo/"; 
         return;
+   }
 
     didShowErrorMessage = true;
     if (err.indexOf("DISABLE_EXCEPTION_CATCHING") != -1)
