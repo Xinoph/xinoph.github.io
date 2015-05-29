@@ -6,6 +6,7 @@ description: Shader comparison.
 categories: [projects, code]
 tags: [Code, Unity3D, C#, Shaders, Open Source]
 permalink: projects/games/radioland/shaderNoDemo
+group: noShow
 
 extra_css: /assets/css/projects.css
 extra_script: /assets/RadiolandShaderDemo/TemplateData/UnityProgress.js

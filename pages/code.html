@@ -10,7 +10,7 @@ extra_css: /assets/css/projects.css
 
 <div class="projects-grid">
     {% for post in site.tags.Code %}
-    {% unless post.categories contains "blog" %}
+    {% unless post.categories contains "blog" or post.group == "noShow" %}
         <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
             <div class="project-title">{{ post.title }}</div>
             {% if post.title == 'Graphics Programming' %}
