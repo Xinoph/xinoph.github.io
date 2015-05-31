@@ -4,7 +4,7 @@ title: Iridescence
 tagline: RPI's EART & EMAC Exhibition
 description: RPI's EART & EMAC Exhibition
 
-tags: [blog]
+tags: [blog, event]
 ---
 {% include JB/setup %}
 For those of you around Troy, NY or those who like to travel, from April 22nd to 25th, RPI is hosting its Electronic Art (EART) and Electronic Media, Arts, & Communication (EART) senior art show at the Fulton Street Gallery.
