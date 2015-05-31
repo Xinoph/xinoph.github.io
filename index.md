@@ -76,10 +76,10 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
 <img src="/assets/images/brian.png" class="btn btn-default project-container" style="float: left; margin-right: 30px; padding: 12px;">
 
 <br><br>
-<h4>I am an undergraduate student at Rensselaer Polytechnic Institute studying game design and electronic art.</h4>
+<h4>I am recent graduate from Rensselaer Polytechnic Institute who studied game design and electronic art.</h4>
 
 
-As a Senior, I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together.
+I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together.
 <br><br>
 You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/assets/BrianTam-Resume.pdf).
 
