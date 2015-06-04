@@ -1,10 +1,10 @@
 ---
 layout: post-noDate
 title: Xin Rig Tool
-tagline: An automatic rig generating tool for Maya. .
-description: An automatic rig generating tool for Maya. .
+tagline: An automatic rig generating tool for Maya.
+description: An automatic rig generating tool for Maya.
 categories: [projects, code]
-tags: [Maya, Code, PyMel]
+tags: [Maya, Code, PyMEL]
 permalink: projects/code/xinrigtool/
 
 extra_css: /assets/css/projects.css
@@ -44,6 +44,6 @@ An automatic rig generating tool for humanoid characters for Maya.
 
 Contains functions to help with the manual rigging of non-humanoid characters. 
 
-Written in PyMel for Maya 2012 and later.  
+Written in PyMEL for Maya 2012 and later.  
 
 &nbsp;
