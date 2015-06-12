@@ -72,6 +72,19 @@ Rendered in real-time using Unity3D with Marmoset Skyshop. <br>
 
 This piece was shown along with other RPI senior art theses in a [gallery from April 22nd-25th 2015](/blog/2015/04/06/iridesence/).
 
+<h3>Marmoset Viewer</h3>
+<iframe src="/assets/viewer/feitian-stand.html" name="viewerframe" allowfullscreen="true" width="100%" height="650px" style="border: 0px" class="img-responsive"></iframe>
+
+<div style="text-align: center;">
+<a href="/assets/viewer/feitian-stand.html" target="viewerframe"><img src="{{images_prefix}}stand.png" class="img-responsive"></a>
+<a href="/assets/viewer/feitian-attack.html" target="viewerframe"><img src="{{images_prefix}}attack.png" class="img-responsive"></a>
+</div>
+
+<br>
+<b>Note:</b> Since particle effects were rendered inside Unity using the Shuriken particle system, they are missing inside of Marmoset Viewer.
+
+<h3>Screenshots</h3>
+
 <div id="slideshow3" style="text-align: center;">
 {% for img in page.screenshots %}
     {% if img[3] == true %}
