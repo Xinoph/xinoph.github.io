@@ -76,8 +76,8 @@ This piece was shown along with other RPI senior art theses in a [gallery from A
 <iframe src="/assets/viewer/feitian-stand.html" name="viewerframe" allowfullscreen="true" width="100%" height="650px" style="border: 0px" class="img-responsive"></iframe>
 
 <div style="text-align: center;">
-<a href="/assets/viewer/feitian-stand.html" target="viewerframe"><img src="{{images_prefix}}stand.png" class="img-responsive"></a>
-<a href="/assets/viewer/feitian-attack.html" target="viewerframe"><img src="{{images_prefix}}attack.png" class="img-responsive"></a>
+<a href="/assets/viewer/feitian-stand.html" target="viewerframe"><img src="{{images_prefix}}stand.png" width="45%"></a>
+<a href="/assets/viewer/feitian-attack.html" target="viewerframe"><img src="{{images_prefix}}attack.png" width="45%"></a>
 </div>
 
 <br>
