@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Home
-tagline: Brian Tam's Blog & Portfolio
+tagline: Brian Tam's Portfolio
 permalink: /
 
 extra_css: /assets/css/projects.css
 
 featured: [Radioland, Zhu FeiTian, Space Doggity, 
-          Wiccan, Space Luddites]
+          Space Luddites, Wiccan]
 
 ---
 {% include JB/setup %}
@@ -19,20 +19,21 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
       {% for post in site.posts %}
       {% if feat == post.title %}
           <a href="{{ post.url }}" class="btn btn-default project-container" title="{{ post.title }}: {{ post.tagline }}">
-              <div class="project-title">{{ post.title }}</div>
-              <img src="/assets/images/tiles/{{ post.title }}.png" class="title-summary img-responsive" alt="{{ post.title }}">
+              <div class="tile-title">{{ post.title }}</div>
+              <img src="/assets/images/tilesBig/{{ post.title }}-450px.png" class="title-summary img-responsive" alt="{{ post.title }}">
           </a>
       {% endif %}
       {% endfor %}
     {% endfor %}
 
     <a href="/projects/2d" class="btn btn-default project-container" title="Behind a Mask: Charcoal, Acrylic, and Newspaper on Canvas">
-              <div class="project-title">Behind a Mask</div>
-              <img src="/assets/images/tiles/BehindAMask.png" class="title-summary img-responsive" alt="Behind a Mask">
+              <div class="tile-title" style="max-width: 238px;">Behind a Mask</div>
+              <img src="/assets/images/tilesBig/BehindAMask-450px.png" class="title-summary img-responsive" alt="Behind a Mask">
           </a>
 
 </div>
 
+{% comment %}
 <hr style="width: 50%;">
 
 ## Latest Blog Post
@@ -66,6 +67,7 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
   </ul>
   {% endunless %}  
 
+{% endcomment %}
 
 <hr style="width: 50%;">
 
@@ -73,13 +75,19 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
 
 <span style="clear:both"></span>
 
+{% comment %}
 <img src="/assets/images/brian.png" class="btn btn-default project-container" style="float: left; margin-right: 30px; padding: 12px;">
 
 <br><br>
-<h4>I am recent graduate from Rensselaer Polytechnic Institute who studied game design and electronic art.</h4>
+{% endcomment %}
+
+<br>
+<h4>I am a graduate from Rensselaer Polytechnic Institute who studied game design and electronic art.</h4>
 
 
-I enjoy making games with my classmates and creating characters either through 2D or 3D means.  I blend both art and code into my work and am always looking into new ways to fuse the two together.
+I enjoy making games with wonky mechanics with zany characters to match. I believe that both players and spectators of a game should get enjoyment from seeing the game world unfold before them.
+<br><br>
+Currently, I am working on a tower defense type game for mobile devices. It has a strong theme that I think many people will enjoy. However, the theme will be kept secret until more development is made.
 <br><br>
 You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/assets/BrianTam-Resume.pdf).
 

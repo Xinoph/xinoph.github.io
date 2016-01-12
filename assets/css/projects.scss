@@ -23,7 +23,7 @@
     }
   }
 
-  .project-title {
+  .project-title, .tile-title {
     left: auto;
     padding: 10px 0px;
     right: auto;
@@ -49,6 +49,27 @@
     }
 
     a:hover > .project-title {
+      opacity: 0.9;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .tile-title {
+      background: $gray-1;
+      margin: 0px;
+      max-width: 450px;
+      opacity: 0;
+      position: absolute;
+
+      // scss-lint:disable Indentation, PropertySortOrder
+      -webkit-transition: all 300ms ease;
+         -moz-transition: all 300ms ease;
+          -ms-transition: all 300ms ease;
+           -o-transition: all 300ms ease;
+              transition: all 300ms ease;
+    }
+
+    a:hover > .tile-title {
       opacity: 0.9;
     }
   }

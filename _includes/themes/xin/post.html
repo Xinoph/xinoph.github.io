@@ -11,6 +11,8 @@
       {{ content }}
     </div>
 
+  {% comment %}
+
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="icon-folder-open"></i></li>
@@ -30,8 +32,6 @@
     <hr>
     <a href="/blog/#{{ page.title | replace:' ','-'}}">&raquo; Return to index</a>
     <a href="#top" style="float: right;">&raquo; Return to the top</a>
-
-    {% comment %}
     <div class="pagination">
       <ul>
       {% if page.previous %}
