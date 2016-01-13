@@ -4,7 +4,7 @@ title: Motherly Instinct
 tagline: Single player arcade game created in Python/Pygame.
 description: Single player arcade game created in Python/Pygame.
 categories: [projects, games]
-tags: [Games, C++, OpenFrameworks, Code, Art, Photoshop]
+tags: [Games, C++, OpenFrameworks, Art, Photoshop]
 permalink: projects/games/motherlyinstinct/
 
 extra_css: /assets/css/projects.css

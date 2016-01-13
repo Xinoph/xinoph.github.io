@@ -4,7 +4,7 @@ title: Space Luddites
 tagline: Cooperative sidescrolling beat-em-up using Unity3D.
 description: Cooperative sidescrolling beat-em-up using Unity3D.
 categories: [projects, games]
-tags: [Games, Unity3D, Art, 3D, Maya, Photoshop, C#, Code]
+tags: [Games, Unity3D, Art, 3D, Maya, Photoshop, C#]
 permalink: projects/games/spaceluddites/
 
 real_date: 2014-05-07

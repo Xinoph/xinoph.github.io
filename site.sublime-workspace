@@ -1,0 +1,413 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"textLimit"
+			],
+			[
+				"max",
+				"maxTextLimit"
+			],
+			[
+				"summ",
+				"summons"
+			],
+			[
+				"Cl",
+				"ClearQueue"
+			],
+			[
+				"Q",
+				"QueuedMessage"
+			],
+			[
+				"Get",
+				"GetComponentsInChildren"
+			],
+			[
+				"m_a",
+				"m_Acceleration"
+			],
+			[
+				"tile",
+				"tileWidth"
+			],
+			[
+				"cir",
+				"posCircleEndCaps"
+			],
+			[
+				"Ser",
+				"SerializeField"
+			],
+			[
+				"m_",
+				"m_InRange"
+			],
+			[
+				"F",
+				"isFriendly"
+			],
+			[
+				"Un",
+				"UnitsToSpawn"
+			],
+			[
+				"RemoveT",
+				"RemoveTargetFromActions"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"te",
+				"textAugment"
+			],
+			[
+				"man",
+				"manaRate"
+			],
+			[
+				"inc",
+				"incomeLvl"
+			],
+			[
+				"in",
+				"incomeCostFactor"
+			],
+			[
+				"income",
+				"incomeCost"
+			],
+			[
+				"p",
+				"performer"
+			],
+			[
+				"mana",
+				"manaCharged"
+			],
+			[
+				"laye",
+				"layerFriendly"
+			],
+			[
+				"Can",
+				"CanUpgradeGoblins"
+			],
+			[
+				"spaw",
+				"spawnedOnce"
+			],
+			[
+				"he",
+				"healthThresholdComparison"
+			],
+			[
+				"is",
+				"isFriendly"
+			],
+			[
+				"res",
+				"resStun"
+			],
+			[
+				"inte",
+				"intervalOff"
+			],
+			[
+				"time",
+				"timeToWait"
+			],
+			[
+				"int",
+				"interval"
+			],
+			[
+				"st",
+				"StaggeredForce"
+			],
+			[
+				"action",
+				"actionsResult"
+			],
+			[
+				"ac",
+				"actionsResult"
+			],
+			[
+				"speed",
+				"speedModifier"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Brian/Desktop/xinoph.github.io"
+	],
+	"file_history":
+	[
+		"/F/Ruby200-x64/bin/bundle",
+		"/F/Ruby200-x64/bin/bundle.bat",
+		"/C/Ruby22-x64/devkit/config.yml",
+		"/C/Ruby22-x64/devkit/dk.rb",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/ProgressiveRender.shader",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/ImageEffectProgressiveRender.cs",
+		"/C/Users/Brian/Desktop/emojione-master/assets/png_512x512 - Copy/outB.txt",
+		"/C/Users/Brian/Desktop/emojione-master/assets/png_512x512 - Copy/setB.txt",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/BattleUIController1.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/BattleUIController.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/ObjectPool.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/SummonPool.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/Scripts/PooledObject.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/SpriteRandomColor.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/Tile.cs",
+		"/C/Users/Brian/Desktop/Runner/Runner/Assets/SelfDestroy.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/Projectile.cs",
+		"/C/Users/Brian/Desktop/Runner/.gitignore",
+		"/C/Users/Brian/Desktop/Upstore Premium Account 1.txt",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Editor/BezierSplineInspector.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/XinHandles/XinLightInspector.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Utils/Tools.cs",
+		"/C/Users/Brian/Documents/Rainmeter/Skins/ABP/GetWeatherCode.ini",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/SpawnerGoldBased.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/FPSDisplay.cs",
+		"/C/Users/Brian/Desktop/Rapidgator Premium Account 3.txt",
+		"/C/Users/Brian/Desktop/Rapidgator Premium Account 1.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/cfg/game_convars.vcfg",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Shaders/textureUVs.shader",
+		"/C/Program Files/Unity/Editor/Data/Resources/ScriptTemplates/81-C# Script-NewBehaviourScript.cs.txt",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/Base.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/ProjectilePool.cs",
+		"/F/Users/Brian/Desktop/builtin_shaders/DefaultResourcesExtra/UI/UI-Default.shader",
+		"/F/Users/Brian/Desktop/builtin_shaders/DefaultResourcesExtra/UI/UI-Unlit-Transparent.shader",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/AnimateMaterialPropertyMana.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Screenshot.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/DayTimeMoveAlongEllipse.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/SpriteOffset.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Spriter2UnityDX/Runtime/EntityRenderer.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Spriter2UnityDX/Runtime/SortingOrderUpdater.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/DayTimeRotation.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/DayTimeColorChange.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/DayTimeScale.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/AnimateMaterialProperty.cs",
+		"/F/Users/Brian/Desktop/EGDFinalProject/Game/Assets/_Radioland/Scripts/Util/ScreenshotOnClick.cs",
+		"/C/Users/Brian/Desktop/vgTerrainSlopeDebugShader.shader",
+		"/C/Users/Brian/Desktop/vgPlayerCollisionTester.cs",
+		"/F/Program Files/Adobe/Adobe Photoshop CS6 (64 Bit)/Plug-ins/Filters/Freebies/More plug-in filters.html",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/MoveAlongEllipse.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/HUDFPS.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/HudFPS.cs",
+		"/C/MyGames/skyforge_mycom/Personal/Logs/net.log",
+		"/C/MyGames/skyforge_mycom/Personal/Logs/net_frame_stats.log",
+		"/C/Users/Brian/Desktop/demiurge.txt",
+		"/C/Users/Brian/Desktop/Test1 Notes",
+		"/F/Users/Brian/Desktop/builtin_shaders/DefaultResources/Internal-GUITexture.shader",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Shaders/SphereUVs.shader",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/ActionProjectile.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/Action.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/TimedSky.cs",
+		"/C/Users/Brian/Desktop/xinoph.github.io/blog/_posts/2015-08-12-mobile.md",
+		"/C/Users/Brian/Documents/My Games/Marvel Heroes/MarvelGame/Config/MarvelInput.ini",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Spawner-GoldBased.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Conditions/Condition.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Condition.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Units/UnitActive.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Action.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Movement.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Spawners/UnitSpawner.cs",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/UnitSpawner.cs",
+		"/C/Users/Brian/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Brian/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Brian/AppData/Roaming/Sublime Text 3/Packages/User/C#.sublime-settings",
+		"/C/Users/Brian/Desktop/xidau123_ADMAYA2015sp6Win/Mya2015sp6Win/Key.txt",
+		"/C/Users/Brian/Desktop/xidau123_ADMAYA2015sp6Win/Mya2015sp6Win/AUTODESK_2015_XFORCE/install.notes.txt",
+		"/C/Users/Brian/Desktop/xidau123_ADMAYA2015sp6Win/Upload by xidau123.txt",
+		"/C/Users/Brian/Desktop/spine-runtimes-master/spine-unity/README.md",
+		"/C/Users/Brian/Desktop/TowerGame/TowerGame/Assets/Scripts/Unit.cs",
+		"/C/Python-2.7/README"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"reg_key",
+			"persis",
+			"pool",
+			"t",
+			"tools",
+			"shield",
+			"gold",
+			"goblin",
+			"goblins"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"mana",
+			"income"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "site.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 164.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
