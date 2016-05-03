@@ -6,7 +6,7 @@ permalink: /
 
 extra_css: /assets/css/projects.css
 
-featured: [Radioland, Zhu FeiTian, Space Doggity, 
+featured: [Huntress Lara, Radioland, Zhu FeiTian, Space Doggity, 
           Space Luddites, Wiccan]
 
 ---
@@ -25,11 +25,6 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
       {% endif %}
       {% endfor %}
     {% endfor %}
-
-    <a href="/projects/2d" class="btn btn-default project-container" title="Behind a Mask: Charcoal, Acrylic, and Newspaper on Canvas">
-              <div class="tile-title" style="max-width: 238px;">Behind a Mask</div>
-              <img src="/assets/images/tilesBig/BehindAMask-450px.png" class="title-summary img-responsive" alt="Behind a Mask">
-          </a>
 
 </div>
 
@@ -87,7 +82,7 @@ featured: [Radioland, Zhu FeiTian, Space Doggity,
 
 I enjoy making games with wonky mechanics with zany characters to match. I believe that both players and spectators of a game should get enjoyment from seeing the game world unfold before them.
 <br><br>
-Currently, I am working on a tower defense type game for mobile devices. It has a strong theme that I think many people will enjoy. However, the theme will be kept secret until more development is made.
+Currently, I am working on a satirical game about microtransactions for mobile devices. I will start a development blog for this game when an initial playable prototype is ready.
 <br><br>
 You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/assets/BrianTam-Resume.pdf).
 

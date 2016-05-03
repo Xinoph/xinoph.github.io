@@ -20,15 +20,8 @@ screenshots: [[laraCliff, ],
 
 <iframe width="640" height="480" src="https://sketchfab.com/playlists/embed?collection=834ba7e1e68d4379aaaae6010a99a512" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
 
-<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-    <a href="https://sketchfab.com/xinoph/collections/huntress-lara?utm_source=website&utm_medium=embed&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Huntress Lara</a>
-    by <a href="https://sketchfab.com/xinoph?utm_source=website&utm_medium=embed&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Xinoph</a>
-    on <a href="https://sketchfab.com?utm_source=website&utm_medium=embed&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-</p>
 
-
-
-{% assign images_prefix = "/assets/images/XPM/" %}
+{% assign images_prefix = "/assets/images/HuntressLara/" %}
 {% assign thumbnails = false %}
 
 <div class="project-images" id="slideshow">
