@@ -22,7 +22,7 @@ screenshots: [[laraCliff, ],
 
 
 {% assign images_prefix = "/assets/images/HuntressLara/" %}
-{% assign thumbnails = false %}
+{% assign thumbnails = true %}
 
 <div class="project-images" id="slideshow">
 {% for img in page.screenshots %}

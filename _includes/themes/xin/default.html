@@ -66,6 +66,58 @@
         <div class="container-narrow">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
+          
+                        <li
+              
+            >
+                <a href="/">Home</a>
+            </li>
+
+            
+            <li
+              
+            >
+                <a href="/vfxreel/">Technical Effects Reel</a>
+            </li>
+
+            
+            <li
+              
+            >
+                <a href="/projects/2d/">2D</a>
+            </li>
+
+            
+            <li
+              
+                class="active"
+              
+            >
+                <a href="/projects/3d/">3D</a>
+            </li>
+
+            
+            <li
+              
+            >
+                <a href="/projects/games/">Games</a>
+            </li>
+
+            
+            <li
+              
+            >
+                <a href="/projects/code/">Code</a>
+            </li>
+
+            
+            <li
+              
+            >
+                <a href="/assets/BrianTam-Resume.pdf">Resume</a>
+            </li>
+          
+            {% comment %}
             {% for link in page.navigation %}
             <li
               {% if link.url == "/" and page.url == "/" %}
@@ -78,6 +130,7 @@
             </li>
 
             {% endfor %}
+            {% endcomment %}
             {% comment %}
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
