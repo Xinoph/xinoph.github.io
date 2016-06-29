@@ -147,6 +147,31 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "pages/3d.html",
+			"settings":
+			{
+				"buffer_size": 1528,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/1992-12-22-2d.md",
+			"settings":
+			{
+				"buffer_size": 2313,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "What would a typical day of work be?\n\nWhat would the testing workflow be like? Would I only log bugs or work more closely with team members to identify and resolve issues?\n\nHow much interaction is there with the rest of the team? ",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Windows",
+				"name": "What would a typical day of work be?"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -193,10 +218,13 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Brian/Desktop/xinoph.github.io"
+		"/C/Users/Brian/Desktop/xinoph.github.io",
+		"/C/Users/Brian/Desktop/xinoph.github.io/_posts",
+		"/C/Users/Brian/Desktop/xinoph.github.io/pages"
 	],
 	"file_history":
 	[
+		"/C/Users/Brian/Desktop/Prototypes/MatchColoredTiles/Assets/TileHolder.cs",
 		"/F/Ruby200-x64/bin/bundle",
 		"/F/Ruby200-x64/bin/bundle.bat",
 		"/C/Ruby22-x64/devkit/config.yml",
@@ -323,8 +351,97 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pages/3d.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1414,
+								1414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/1992-12-22-2d.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								329
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"auto_name": "What would a typical day of work be?",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 72.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
