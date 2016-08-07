@@ -79,7 +79,6 @@ featured: [Delia, Huntress Lara, Radioland, Zhu FeiTian, Space Doggity,
 <br>
 <h4>I am a freelance artist with skills in 3D modeling, 2D illustration, and Unity game development.</h4>
 
-<br><br>
 I graduated from Rensselaer Polytechnic Institute with dual degrees in game design and electronic art.
 <br><br>
 I enjoy making games with wonky mechanics with zany characters to match. I believe that both players and spectators of a game should get enjoyment from seeing the game world unfold before them.
