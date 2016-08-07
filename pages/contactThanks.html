@@ -1,0 +1,30 @@
+---
+layout: page
+title: Contact
+description: Contact
+group: navigation
+permalink: contact/thanks/
+extra_css: /assets/css/projects.css
+
+
+---
+{% include JB/setup %}
+
+<h4>Thank you for your message!</h4>
+
+<form action="https://formspree.io/brian.w.tam@gmail.com"
+      method="POST">
+    <b>Name</b><br>
+    <input type="text" name="name" placeholder="Your name" /><br>
+    <b>Email</b><br>
+    <input type="text" name="_replyto" placeholder="Your email" /><br>
+
+    <input type="hidden" name="_subject" value="Message through Website" />
+    <input type="hidden" name="_next" value="/contact/thanks/" />
+
+    <b>Message</b><br>
+    <textarea name="body" id="message" placeholder="Your message"></textarea><br>
+
+    <input type="submit" id="buttonSend" value="Send">
+</form>
+
