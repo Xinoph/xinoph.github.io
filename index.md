@@ -77,9 +77,11 @@ featured: [Delia, Huntress Lara, Radioland, Zhu FeiTian, Space Doggity,
 {% endcomment %}
 
 <br>
-<h4>I am a graduate from Rensselaer Polytechnic Institute who studied game design and electronic art.</h4>
+<h4>I am a freelance artist with skills in 3D modeling, 2D illustration, and Unity game development.</h4>
 
-
+<br><br>
+I graduated from Rensselaer Polytechnic Institute with dual degrees in game design and electronic art.
+<br><br>
 I enjoy making games with wonky mechanics with zany characters to match. I believe that both players and spectators of a game should get enjoyment from seeing the game world unfold before them.
 <br><br>
 You can contact me at [brian.w.tam@gmail.com](mailto:brian.w.tam@gmail.com) or check out my [resume](/assets/BrianTam-Resume.pdf).
