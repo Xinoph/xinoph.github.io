@@ -18,7 +18,7 @@ screenshots: [[laraCliff, ],
 {% include JB/setup %}
 
 
-<iframe width="640" height="480" src="https://sketchfab.com/playlists/embed?collection=834ba7e1e68d4379aaaae6010a99a512&sort_by=published_at" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+<iframe width="640" height="480" src="https://sketchfab.com/playlists/embed?collection=834ba7e1e68d4379aaaae6010a99a512&sort_by=published_at" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" style="display: block; margin: 0 auto;"></iframe>
 
 
 {% assign images_prefix = "/assets/images/HuntressLara/" %}
@@ -39,5 +39,15 @@ screenshots: [[laraCliff, ],
 Fan art of Lara Croft in the Huntress outfit from Rise of the Tomb Raider
 
 Created using Maya and Photoshop.
+
+<h3>Stats</h3>
+
+* 3697 faces.
+* Texture maps
+    * 1024*1024 for Lara
+    * 256*256 for eyeball
+    * 1024*1024 for accessories
+    * 512*512 for cloth & fur containing alpha
+    * 2 512*512 textures for environment props
 
 &nbsp;
