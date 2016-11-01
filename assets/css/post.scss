@@ -70,3 +70,115 @@
   margin-right: auto;
   width: 360px;
 }
+
+.projects-grid {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  .btn {
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .project-container {
+    text-align: center;
+
+    // Add extra separation on smaller screens.
+    @media only screen and (max-width: 768px) {
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.23), 0px 3px 10px rgba(0, 0, 0, 0.16);
+      margin: 10px;
+    }
+  }
+
+  .project-title, .tile-title {
+    left: auto;
+    padding: 10px 0px;
+    right: auto;
+    width: 100%;
+  }
+
+  // Hide title and reveal on hover on large enough displays.
+  // A "hover" media query would be ideal, but it is still being drafted?
+  @media only screen and (min-width: 768px) {
+    .project-title {
+      background: $gray-1;
+      margin: 0px;
+      max-width: 256px;
+      opacity: 0;
+      position: absolute;
+
+      // scss-lint:disable Indentation, PropertySortOrder
+      -webkit-transition: all 300ms ease;
+         -moz-transition: all 300ms ease;
+          -ms-transition: all 300ms ease;
+           -o-transition: all 300ms ease;
+              transition: all 300ms ease;
+    }
+
+    a:hover > .project-title {
+      opacity: 0.9;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .tile-title {
+      background: $gray-1;
+      margin: 0px;
+      max-width: 450px;
+      opacity: 0;
+      position: absolute;
+
+      // scss-lint:disable Indentation, PropertySortOrder
+      -webkit-transition: all 300ms ease;
+         -moz-transition: all 300ms ease;
+          -ms-transition: all 300ms ease;
+           -o-transition: all 300ms ease;
+              transition: all 300ms ease;
+    }
+
+    a:hover > .tile-title {
+      opacity: 0.9;
+    }
+  }
+
+  img {
+    padding: 0px;
+  }
+}
+
+.projects-list {
+  ul {
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .project-summary-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .project-summary-tagline {
+    font-size: 16px;
+  }
+
+  .project-summary-date {
+    font-size: 14px;
+  }
+
+  .title-img {
+    display: inline-block;
+    height: auto;
+    max-height: 380px;
+    padding: 5px;
+    width: auto;
+  }
+}
+
+.alternative-link {
+  padding: 30px 10px 10px;
+}
