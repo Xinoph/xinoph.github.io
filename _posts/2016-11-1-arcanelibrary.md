@@ -84,7 +84,7 @@ Assets created using Maya, Photoshop, Substance Designer, & Substance Painter.
     $('#slideshow2').photobox('a', {history:false, time:0, counter:false});
 </script>
 
-* Triangles: Around 1.1M.
+* Triangles: Around 490k. 2076 books at 180 triangles each take up the majority.
 * Textures: Albedo, Normal, Metallic/Smoothness maps for each material
     * 96 total texture files, including debugging textures
 
