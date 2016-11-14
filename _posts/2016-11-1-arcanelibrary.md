@@ -28,9 +28,9 @@ breakdownImages: [[spellArea-noLighting, No lighting],
 {% assign images_prefix = "/assets/images/ArcaneLibrary/" %}
 {% assign thumbnails = true %}
 
-<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/PertinentDeficientBellsnake' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/LimitedWhichAmericanmarten' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
-<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/DizzyCavernousBeardeddragon' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+<div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/HarmlessMedicalHerald' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 <div class="project-images" id="slideshow">
 {% for img in page.screenshots %}
@@ -59,18 +59,6 @@ Assets created using Maya, Photoshop, Substance Designer, & Substance Painter.
 * Wrote shaders to achieve visual effects
     * Nebula system: World position as UVs on a particle system
     * Gems: Edited base gem shader to give it a rainbow tint based on view angle
-
-<h5>Work In Progress</h5>
-
-* Last updated: Nov. 1
-* To Do
-    * Add more details to tell the narrative of the environment
-        * Spell ingredients
-        * Drawings scattered throughout library
-        * Paintings of library owners
-        * More scattered objects
-    * Finalize lighting
-    * Interactivity
 
 <h3>Breakdown</h3>
 
