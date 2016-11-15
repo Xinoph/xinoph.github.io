@@ -12,7 +12,9 @@ extra_css: /assets/css/projects.css
 screenshots: [[laraCliff, ],
 			  [laraBow, ],
               [laraBind, ],
-              [laraWire, ]
+              [laraWire, ],
+              [tex_Lara, ],
+              [tex_Accessories, ]
               ]
 ---
 {% include JB/setup %}
