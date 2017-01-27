@@ -44,17 +44,17 @@ breakdownImages: [[spellArea-noLighting, No lighting],
 
 <h3>Overview</h3>
 
-Environment art of an arcane library.
+A library full of mystical artifacts and never-ending spells.
 
-Assets created using Maya, Photoshop, Substance Designer, & Substance Painter.
-<br>Rendered in realtime using Unity3D.
+Assets created using Maya, Photoshop, Substance Designer, and Substance Painter.
+<br>Rendered in real-time using Unity.
 
 [» Windows Demo (74 MB)](/assets/ArcaneLibrary/ArcaneLibrary.zip)
 
 [» WebGL Demo (lower quality)](/projects/3d/arcanelibraryWebGL/)
 
 <h5>My Work</h5>
-* Modeled & placed objects in Maya & Unity3D
+* Modeled & placed objects in Maya & Unity
 * Textured using Photoshop, Substance Designer, & Substance Painter
 * Wrote shaders to achieve visual effects
     * Nebula system: World position as UVs on a particle system
