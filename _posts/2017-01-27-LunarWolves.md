@@ -1,8 +1,8 @@
 ---
 layout: post-noDate
 title: Lunar Wolves
-tagline: An illustration of a Vindictus character. Estimated time - 20 hours.
-description: An illustration of a Vindictus character. Estimated time - 20 hours.
+tagline: An educational game about lunar phases.
+description: An educational game about lunar phases.
 extra_css: /assets/css/projects.css
 categories: [projects, games]
 tags: [Games, Unity3D, Art, C#, Photoshop]
