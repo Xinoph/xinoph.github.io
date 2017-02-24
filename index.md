@@ -7,8 +7,8 @@ permalink: /
 extra_css: /assets/css/projects.css
 
 featured: [Arcane Library, Delia,
-          Huntress Lara, Radioland,
-          Zhu FeiTian, Space Doggity]
+          Lunar Wolves, Huntress Lara,
+          Radioland, Zhu FeiTian]
 
 ---
 {% include JB/setup %}
