@@ -5,7 +5,7 @@ tagline: A mesh for particle effects tool for Maya.
 description: A mesh for particle effects tool for Maya.
 categories: [projects, code]
 tags: [Maya, Code, PyMEL]
-permalink: projects/code/xinrigtool/
+permalink: projects/code/xinparticlemesher/
 
 extra_css: /assets/css/projects.css
 
