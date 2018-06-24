@@ -6,7 +6,7 @@ permalink: /
 
 extra_css: /assets/css/projects.css
 
-featured: [Arcane Library, Delia,
+featured: [Wayfair Rendering, Arcane Library,
           Lunar Wolves, Huntress Lara,
           Radioland, Zhu FeiTian]
 
@@ -78,7 +78,8 @@ featured: [Arcane Library, Delia,
 {% endcomment %}
 
 <br>
-<h4>I am a freelance artist with skills in 3D modeling, 2D illustration, and Unity game development.</h4>
+<h4>I am a 3D Viz Artist at Wayfair creating photorealistic renderings of products.
+<br>Outside of work, I develop my skills in 3D modeling, 2D illustration, and Unity game development.</h4>
 <br>
 
 I graduated from Rensselaer Polytechnic Institute with dual degrees in game design and electronic art.
