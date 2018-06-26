@@ -19,17 +19,7 @@ lanes: [
     ALCT6901-r1,
     LDER1425-r1,
     BL3480-r1,
-    CHRL3562-r1,
-    BCHH6134-r1,
-    UNRS3257-r0,
-    LGLY5155-r0,
-    AGTG9526-r0b,
-    ANDV3284-r0,
-    BCMH2089-r1b,
-    WRMG2653-r0,
-    ALTH4311-r0,
-    LNPK2197-r2,
-    WLAO1066-r3
+    CHRL3562-r1
 ]
 
 
