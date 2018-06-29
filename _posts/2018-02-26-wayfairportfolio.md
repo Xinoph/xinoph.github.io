@@ -161,4 +161,10 @@ fn SaveFurPreset fur &RUG_FurOptions = (
 )
 ```
 
+```HTML
+<body>
+<a href="dd">dd</a>
+</body>
+```
+
 &nbsp;
