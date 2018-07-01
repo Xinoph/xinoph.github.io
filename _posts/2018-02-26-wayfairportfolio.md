@@ -101,7 +101,7 @@ Smaller scripts that I have written for artists to use include
 * Toolbar button to create a window light with appropriate light settings and render properties
 * Toolbar button to create a white card with appropriate render properties
 * Menu to quickly save/load VRay VFB color correction options
-* Improvements and fixes to existing toolkit scripts such as "VRay Fur Lister," Autogenerate Light Select Elements," & "VRay Proxy Converter"
+* Improvements and fixes to existing toolkit scripts such as "VRay Fur Lister," "Autogenerate Light Select Elements," & "VRay Proxy Converter"
 
 Written in MAXScript for 3ds Max.
 
