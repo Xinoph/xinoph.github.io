@@ -13,7 +13,7 @@ screenshots: [[xpm01, PyMEL tool for creating vertex-based particle emitters.],
 			  [xpm02, Select emission vertices & press the button to create the emitter mesh.],
               [xpm03, Automatic subdivision of silhouette edges allows for tighter particle placement.],
               [xpm04, Particle emission using generated shape in Unity3D.],
-              [xpm05, Particles applied to a model from the Dota 2 Workshop Requirements.]
+              [xpm05, Particles applied to a model from the Dota 2 Workshop examples.]
               ]
 ---
 {% include JB/setup %}
@@ -29,7 +29,7 @@ screenshots: [[xpm01, PyMEL tool for creating vertex-based particle emitters.],
 
 <div class="project-images" id="slideshow">
 {% for img in page.screenshots %}
-    <a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a>
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
 {% endfor %}
 </div>
 

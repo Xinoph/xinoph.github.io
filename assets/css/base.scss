@@ -203,3 +203,9 @@ li > i {
   text-decoration: none;
   display: inline-block;
 }
+
+.divInGrid {
+  display: inline-grid;
+  max-width: 425px;
+  padding: 0px 10px
+}

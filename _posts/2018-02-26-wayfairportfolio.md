@@ -22,25 +22,44 @@ lanes: [
     CHRL3562-r1
 ]
 
+xrt: [[xrt01, Easy to configure options],
+              [xrt02, Automatically generate curves based on existing joints],
+              [xrt03, Sets up the connections between curves and joints],
+              [xrt04, Different head follow options],
+              [xrt05, FK / IK switch with interpolation],
+              [xrt06, Hand controls based on number of fingers]
+              ]
+
+xpm: [[xpm01, PyMEL tool for creating vertex-based particle emitters],
+              [xpm02, Select emission vertices & press the button to create the emitter mesh],
+              [xpm03, Automatic subdivision of silhouette edges allows for tighter particle placement],
+              [xpm04, Particle emission using generated shape in Unity3D],
+              [xpm05, Particles applied to a model from the Dota 2 Workshop examples]
+              ]
+
+splineik: [[spline01, Easy to configure splines],
+              [spline03, The mesh can snap directly to the curve],
+              [spline02, The mesh can interpolate along the curve's length],
+              [spline04, Spline IK system on the Flying Spaghetti Monster's tentacles],
+              [spline05, The splines & control points driving the system]
+              ]
+
+acglr: [
+    [radiosity.gif, Animation of light & color bleeding calculation using a Radiosity algorithm],
+    [raytrace-shadowsAndAA.png, "Raytracing with reflections, soft shadows, and antialiasing"],
+]
+
+acgmm: [
+    [subdivisionBunny.gif, Loop Subdivision Rules (mesh smoothing) applied to the Stanford Bunny],
+    [bunnyByeBye.gif, Edge collapse Operations (decimation) performed on the Stanford Bunny]
+]
 
 ---
 {% include JB/setup %}
 
-{% assign images_prefix = "/assets/images/Wayfair/" %}
-
+{% assign images_prefix = "/assets/images/Wayfair/2k/" %}
 
 <h3 id="fastlanes">Fast Lanes</h3>
-
-These are a few product photography images that I have created at Wayfair.
-
-My responsibilities as a 3D Viz Artist include
-
-* Ensuring good placement & composition while maintaining the Stylist's vision for the product
-* Modifying models & materials for product accuracy and photorealism
-* Lighting, rendering, and compositing the scene according to Wayfair's standards
-
-Images are rendered in 3ds Max with VRay and composited in Photoshop.
-
 <div class="project-images" id="slideshow">
 {% for img in page.lanes %}
     <a href="{{images_prefix}}{{img}}.jpg"><img src= "{{images_prefix}}{{img}}.jpg" class="img-responsive"></a>
@@ -53,118 +72,219 @@ Images are rendered in 3ds Max with VRay and composited in Photoshop.
 
 &nbsp;
 
+<hr>
 <h3 id="rugassistant">Rug Assistant</h3>
 
-```MAXScript
-fn FurFromPreset preset &RUG_FurOptions = (
-    if (getCurrentSelection()).count != 0 then (
-        with undo on (
-            if (classof selection[1] == VRayFur) then (
-                -- Modify existing fur if selected
-                fur = selection[1]
-                RUGStruct.model = selectRugInGroup()
-                rug = RUGStruct.model
-            ) else (
-                -- Or create a new fur
-                RUGStruct.model = selectRugInGroup()
-                if (superclassof RUGStruct.model != geometryclass) then (
-                    messageBox "Please select a rug object inside an opened group."
-                ) else (
-                    rug = RUGStruct.model
-                    
-                    fur = VRayFur sourceNode:rug transform:rug.transform
-                    fur.scale = [0.01, 0.01, 0.01]
-                    if (isGroupMember rug) then (
-                        rootGroup = getRootGroupHead rug
-                        attachNodesToGroup fur rootGroup
-                    )
-                    fur.name = rug.name + "_fur"
-                )
-            )
-            if (fur != undefined) then (
-                -- Set fur preset properties
-                props = getPropNames preset
-                for p in props do
-                (
-                    if (hasproperty fur p) then
-                    (
-                        pVal = getProperty preset p
-                        if (pVal != undefined) then
-                            setProperty fur p pVal
-                    )
-                )
-                
-                -- Set placement
-                setProperty fur "placement" RUG_FurOptions.placementType
-                setProperty fur "materialID" RUG_FurOptions.mtlid
-                
-                fur.wirecolor = rug.wirecolor
-                
-                if (RUG_FurOptions.useHairMtl == true) then (
-                    VRayHairMtlPreset fur rug
-                ) else (
-                    fur.material = rug.material
-                    if (classof fur.material == Multimaterial) then (
-                        messageBox "Multi/Sub Material found on rug. Please double check fur's material"
-                    )
-                
-                )
-                RUGStruct.fur = fur
-                select fur
-            )
-        )
-    ) else (messageBox "Please only select one object or select a valid object")
-)
-```
+The Rug Assistant in an Artist Toolkit script that helps generate realistic rugs.
 
-```MAXScript
-fn SaveFurPreset fur &RUG_FurOptions = (
-    if (selection.count != 1 or (classof selection[1] != VRayFur)) then (
-        messageBox "Please select a fur object."
-    ) else (
-        fur = $
-        preset = ""
-        
-        props = getPropNames RUG_FurOptions.furPreset
-        presetName = RUG_FurOptions.RUG_UI_PresetName.text
-        listOfPresets = #()
+It has 3 main components:
 
-        -- Save preset name
-        if (doesFileExist furPresetsINI == true and hasINISetting furPresetsINI ("FurPresets")) then (
-            -- Get existing string of presets & convert to array
-            stringPresets = (GetINISetting furPresetsINI "FurPresets" "Presets") as string
-            listOfPresets = filterString stringPresets "¦"
-        )
-        -- Append new preset to array
-        appendIfUnique listOfPresets presetName
-        -- Convert array to string using ¦ as seperator
-        listOfPresetsAsString = ""
-        for s in listOfPresets do (
-            listOfPresetsAsString = listOfPresetsAsString + s + "¦"
-        )
-        SetINISetting furPresetsINI "FurPresets" "Presets" (listOfPresetsAsString as string)
-        
-        -- Save preset settings
-        preset = "[FurPresets-" + presetName + "]\n"
-        for p in props do (
-            if (hasproperty fur p) then (
-                pVal = getProperty fur p
-                if (pVal != undefined) then (
-                    SetINISetting furPresetsINI ("FurPresets-"+presetName) (p as string) (pVal as string)
-                    preset = preset + (p as string) + "=" + (pVal as string) + "\n"
-                )
-            )
-        )
-        RUG_FurOptions.RUG_UI_PresetParameters.text = preset
-    )
-    RefreshFurPresetsList &RUG_FurOptions
-)
-```
+* Binding generation with different shape options
+* Noise variation with standardized settings
+* Fur generation from presets
 
-```HTML
-<body>
-<a href="dd">dd</a>
-</body>
-```
+
+Tom Walker wrote the bulk of the binding generation while I added generation from edge selection and also optimized and fixed parts of the script.
+
+I wrote the parts for the noise variation and fur generation.
+
+Written in MAXScript for 3ds Max.
+
+<h5>Code Sample:</h5>
+<pre data-src="/assets/codesamples/rugassistant.ms" class="language-clike line-numbers"></pre>
+
+<hr>
+<h3 id="miscwayfair">Other Artist Toolkit Scripts</h3>
+
+Smaller scripts that I have written for artists to use include
+
+* Toolbar button to create a window light with appropriate light settings and render properties
+* Toolbar button to create a white card with appropriate render properties
+* Menu to quickly save/load VRay VFB color correction options
+* Improvements and fixes to existing toolkit scripts such as "VRay Fur Lister," Autogenerate Light Select Elements," & "VRay Proxy Converter"
+
+Written in MAXScript for 3ds Max.
+
+<h5>Code Sample:</h5>
+<pre data-src="/assets/codesamples/btammacros.ms" class="language-clike line-numbers"></pre>
+<hr>
+<h3 id="xinrigtool">Xin Rig Tool</h3>
+An automatic rig generating tool for humanoid characters for Maya. 
+
+Contains functions to help with the manual rigging of non-humanoid characters. 
+
+Written in Python for Maya.  
+
+<div class="video-wrapper">
+    <iframe src="//player.vimeo.com/video/116376565" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+{% assign images_prefix = "/assets/images/XinRigTool/" %}
+{% assign thumbnails = true %}
+
+<div class="project-images" id="slideshowxrt">
+{% for img in page.xrt %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowxrt').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+<h5>Code Sample:</h5>
+<pre data-src="/assets/codesamples/xinrigtool.py" class="language-python line-numbers"></pre>
+
+<hr>
+<h3 id="xinpm">Xin Particle Mesher</h3>
+A tool that generates the mesh used for vertex-based particle effects.
+
+Vertices on the input mesh that should emit particles are selected, and a new mesh is generated.
+
+A simple button click generates additional vertices along the origin edges that allows for a tighter particle system.
+
+Written in Python for Maya.
+
+<div class="video-wrapper">
+    <iframe src="//player.vimeo.com/video/129827346" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+{% assign images_prefix = "/assets/images/XPM/" %}
+{% assign thumbnails = true %}
+
+<div class="project-images" id="slideshowxpm">
+{% for img in page.xpm %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowxpm').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+
+<h5>Code Sample:</h5>
+<pre data-src="/assets/codesamples/xinpm.py" class="language-python line-numbers"></pre>
+
+<hr>
+<h3 id="splineik">Spline IK for Unity</h3>
+An inverse kinematic system that uses splines to determine joint locations. This allows for natural looking movement while also being easy to configure.
+
+Just move a control’s transform, and the mesh follows!
+
+Written in C# for Unity3D.
+
+<div class="video-wrapper">
+    <iframe src="//player.vimeo.com/video/116376258" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+{% assign images_prefix = "/assets/images/SplineIK/" %}
+{% assign thumbnails = true %}
+
+<div class="project-images" id="slideshowsplineik">
+{% for img in page.splineik %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowsplineik').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+<h5>Code Sample:</h5>
+<pre data-src="/assets/codesamples/splineik.cs" class="language-csharp line-numbers"></pre>
+
+<hr>
+<h3 id="graphicsprogramming">Graphics Programming with OpenGL</h3>
+Various examples that show different aspects & techniques of computer graphics.
+
+The code is written in C++ using OpenGL 3.2.
+
+{% assign images_prefix = "/assets/images/ACG/" %}
+<h4>Lighting & Rendering</h4>
+<div class="project-images" id="slideshowacglr">
+{% for img in page.acglr %}
+    <div class="divInGrid" style="max-width: 311px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive" style="max-width: 311px"></a><h5>{{img[1]}}</h5>
+    </div>
+{% endfor %}
+</div>
+
+<h5>Code Samples:</h5>
+<pre data-src="/assets/codesamples/radiosity.cpp" class="language-cpp line-numbers"></pre>
+
+<pre data-src="/assets/codesamples/raytracer.cpp" class="language-cpp line-numbers"></pre>
+
+<script>
+    $('#slideshowacglr').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+
+<h4>Mesh Manipulation</h4>
+<div class="project-images" id="slideshowacgmm">
+{% for img in page.acgmm %}
+    <div class="divInGrid" style="max-width: 360px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowacgmm').photobox('a', {history:false, time:0, counter:false});
+</script>
+
+<h5>Code Samples:</h5>
+
+<pre data-src="/assets/codesamples/subdivision.cpp" class="language-cpp line-numbers"></pre>>
+
+<pre data-src="/assets/codesamples/edgecollapse.cpp" class="language-cpp line-numbers"></pre>
 
 &nbsp;
+
+{%comment%}
+<script>
+Prism.plugins.toolbar.registerButton('select-code', function(env) {
+    var button = document.createElement('button');
+    button.innerHTML = 'Select Code';
+
+    button.addEventListener('click', function () {
+        // Source: http://stackoverflow.com/a/11128179/2757940
+        if (document.body.createTextRange) { // ms
+            var range = document.body.createTextRange();
+            range.moveToElementText(env.element);
+            range.select();
+        } else if (window.getSelection) { // moz, opera, webkit
+            var selection = window.getSelection();
+            var range = document.createRange();
+            range.selectNodeContents(env.element);
+            selection.removeAllRanges();
+            selection.addRange(range);
+        }
+    });
+
+    return button;
+});
+</script>
+{%endcomment%}
+
+<script>
+Prism.plugins.toolbar.registerButton('expand-code', function(env) {
+    var button = document.createElement('button');
+    button.innerHTML = 'Expand Code';
+
+    button.addEventListener('click', function () {
+        var p = env.element.parentElement;
+        maxh = "50em";
+        h = p.style.maxHeight;
+        if (h == maxh) {
+            h = "8em";
+            button.innerHTML = 'Expand Code';
+        } else {
+            h = maxh;
+            button.innerHTML = 'Collapse Code';
+        }
+        p.style.maxHeight = h;
+    });
+
+    return button;
+});
+</script>

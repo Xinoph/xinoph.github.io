@@ -27,12 +27,13 @@ images: [
 
 <div class="project-images" id="slideshow">
     {% for img in page.images %}
+    <div class="divInGrid" style="max-width: 345px">
     	{% if img[2] %}
-    	    <a href="{{images_prefix}}{{img[0]}}.gif" class="project-container">
-            <img src="{{images_prefix}}{{img[0]}}.gif" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px"
+    	    <a href="{{images_prefix}}{{img[0]}}.gif">
+            <img src="{{images_prefix}}{{img[0]}}.gif" class="img-responsive" alt="{{img[1]}}"
     	{% else %}
-        <a href="{{images_prefix}}{{img[0]}}.png" class="project-container">
-            <img src="{{images_prefix}}{{img[0]}}.png" class="img-responsive" alt="{{img[1]}}" style="margin: 1px; margin-bottom: 3px"
+        <a href="{{images_prefix}}{{img[0]}}.png">
+            <img src="{{images_prefix}}{{img[0]}}.png" class="img-responsive" alt="{{img[1]}}" 
         {% endif %}
         
         {% if img[3] != null %}
@@ -40,6 +41,7 @@ images: [
         {% endif %}
         >
         </a>
+    <h5>{{img[1]}}</h5></div>
     {% endfor %}
 </div>
 
