@@ -22,6 +22,17 @@ lanes: [
     CHRL3562-r1
 ]
 
+wfrug: [
+    [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows how easy it is to use!"],
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as scene in the scene view"]
+]
+
+wfscripts: [
+    [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options"],
+    [windowlight.gif, "Insert picture of white card macro"],
+    [windowlight.gif, "Maybe have the VRay VFB Color Correct?"]
+]
+
 xrt: [[xrt01, Easy to configure options],
               [xrt02, Automatically generate curves based on existing joints],
               [xrt03, Sets up the connections between curves and joints],
@@ -75,7 +86,7 @@ acgmm: [
 <hr>
 <h3 id="rugassistant">Rug Assistant</h3>
 
-The Rug Assistant in an Artist Toolkit script that helps generate realistic rugs.
+The Rug Assistant is an Artist Toolkit script that helps generate realistic rugs.
 
 It has 3 main components:
 
@@ -89,6 +100,20 @@ Tom Walker wrote the bulk of the binding generation while I added generation fro
 I wrote the parts for the noise variation and fur generation.
 
 Written in MAXScript for 3ds Max.
+
+<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/AnchoredFamiliarIsabellineshrike' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
+
+{% assign images_prefix = "/assets/images/Wayfair/scripts/" %}
+
+<div class="project-images" id="slideshowwfrug">
+{% for img in page.wfrug %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowwfrug').photobox('a', {history:false, time:0, counter:false});
+</script>
 
 <h5>Code Sample:</h5>
 <pre data-src="/assets/codesamples/rugassistant.ms" class="language-clike line-numbers"></pre>
@@ -104,6 +129,16 @@ Smaller scripts that I have written for artists to use include
 * Improvements and fixes to existing toolkit scripts such as "VRay Fur Lister," "Autogenerate Light Select Elements," & "VRay Proxy Converter"
 
 Written in MAXScript for 3ds Max.
+
+<div class="project-images" id="slideshowwfscripts">
+{% for img in page.wfscripts %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowwfscripts').photobox('a', {history:false, time:0, counter:false});
+</script>
 
 <h5>Code Sample:</h5>
 <pre data-src="/assets/codesamples/btammacros.ms" class="language-clike line-numbers"></pre>
