@@ -21,8 +21,8 @@ lanes: [
 ]
 
 wfrug: [
-    [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows how easy it is to use!"],
-    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"]
+    [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows its ease of use"],
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene"]
 ]
 
 wfruglane: [
@@ -91,7 +91,7 @@ acgmm: [
 
 The Rug Assistant is an Artist Toolkit script that helps generate realistic rugs.
 
-It has 3 main components:
+It has 3 main components
 
 * Binding generation with different shape options
 * Noise variation with standardized settings
