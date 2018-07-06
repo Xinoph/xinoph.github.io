@@ -22,7 +22,10 @@ lanes: [
 
 wfrug: [
     [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows how easy it is to use!"],
-    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"],
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"]
+]
+
+wfruglane: [
     [BLMT6946-r0.jpg, "The final lane shot of this rug generated using the assistant"]
 ]
 
@@ -108,6 +111,10 @@ Written in MAXScript for 3ds Max.
 <div class="project-images" id="slideshowwfrug">
 {% for img in page.wfrug %}
     <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+
+{% for img in page.wfruglane %}
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: 53px;"></a><h5>{{img[1]}}</h5></div>
 {% endfor %}
 </div>
 
