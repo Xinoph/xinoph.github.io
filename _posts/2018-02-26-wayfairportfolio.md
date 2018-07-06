@@ -28,7 +28,7 @@ wfrug: [
 wfscripts: [
     [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options"],
     [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings"],
-    [vfbpreset.png, "A simple UI is used to save & load VFB Color Correction presets"]
+    [vfbccpreset.png, "A simple UI is used to save & load VFB Color Correction presets"]
 ]
 
 xrt: [[xrt01, Easy to configure options],
