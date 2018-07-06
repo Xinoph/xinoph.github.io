@@ -12,25 +12,23 @@ extra_css: /assets/css/projects.css
 lanes: [
     HLDS7210-r1b,
     BL21259-r2,
+    FOME6228-r0,
     ANDV1770-r1,
-    LGLY5715-r1c,
+    ANDV3755-r1,
     WRLO5719-r1b,
-    WLAO3857-r0,
-    ALCT6901-r1,
-    LDER1425-r1,
-    BL3480-r1,
-    CHRL3562-r1
+    LGLY5715-r1c,
+    WLAO3857-r0
 ]
 
 wfrug: [
     [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows how easy it is to use!"],
-    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as scene in the scene view"]
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"]
 ]
 
 wfscripts: [
     [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options"],
-    [windowlight.gif, "Insert picture of white card macro"],
-    [windowlight.gif, "Maybe have the VRay VFB Color Correct?"]
+    [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings"],
+    [vfbpreset.png, "A simple UI is used to save & load VFB Color Correction presets"]
 ]
 
 xrt: [[xrt01, Easy to configure options],
@@ -57,7 +55,8 @@ splineik: [[spline01, Easy to configure splines],
 
 acglr: [
     [radiosity.gif, Animation of light & color bleeding calculation using a Radiosity algorithm],
-    [raytrace-shadowsAndAA.png, "Raytracing with reflections, soft shadows, and antialiasing"],
+    [radiosity-withSphere.png, Render using Radiosity with the addition of a white sphere],
+    [raytrace-shadowsAndAA.png, "Raytracing with reflections, soft shadows, and antialiasing"]
 ]
 
 acgmm: [
@@ -241,7 +240,7 @@ The code is written in C++ using OpenGL 3.2.
 <h4>Lighting & Rendering</h4>
 <div class="project-images" id="slideshowacglr">
 {% for img in page.acglr %}
-    <div class="divInGrid" style="max-width: 311px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive" style="max-width: 311px"></a><h5>{{img[1]}}</h5>
+    <div class="divInGrid" style="max-width: 280px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive" style="max-width: 280px"></a><h5>{{img[1]}}</h5>
     </div>
 {% endfor %}
 </div>
