@@ -10,9 +10,9 @@ permalink: wayfairportfolio/
 extra_css: /assets/css/projects.css
 
 lanes: [
+    FOME6228-r1,
     HLDS7210-r1b,
     BL21259-r2,
-    FOME6228-r0,
     ANDV1770-r1,
     ANDV3755-r1,
     WRLO5719-r1b,

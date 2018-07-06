@@ -10,16 +10,14 @@ permalink: projects/3d/wayfairrendering/
 extra_css: /assets/css/projects.css
 
 lanes: [
+    FOME6228-r1,
     HLDS7210-r1b,
     BL21259-r2,
     ANDV1770-r1,
-    LGLY5715-r1c,
+    ANDV3755-r1,
     WRLO5719-r1b,
-    WLAO3857-r0,
-    ALCT6901-r1,
-    LDER1425-r1,
-    BL3480-r1,
-    CHRL3562-r1
+    LGLY5715-r1c,
+    WLAO3857-r0
 ]
 
 

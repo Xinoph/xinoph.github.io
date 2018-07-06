@@ -60,10 +60,22 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+    <style>
+      .visibledevice {display: initial;}
+
+      @media (max-width : 500px) and (orientation : portrait) {
+          .visibledevice {display: none;}
+      }
+
+      @media (max-height : 500px) and (orientation : landscape) {
+          .visibledevice {display: none;}
+      }
+    </style>
+
   </head>
 
   <body>
-    <div class="navbar" >
+    <div class="navbar visibledevice" style="position: fixed; width: 100%; z-index: 100;">
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="/wayfairportfolio/">{{ site.title }}</a>
@@ -92,8 +104,46 @@
             <li>
                 <a href="#graphicsprogramming">OpenGL</a>
             </li>
+        
+            <li style="margin-left: 3em;">
+                <a href="/assets/BrianTam-WayfairResume.pdf" target="_blank">Resume</a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </div>
 
-            
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/wayfairportfolio/">{{ site.title }}</a>
+          <ul class="nav">
+
+            <li>
+                <a href="#fastlanes">Fast Lanes</a>
+            </li>
+
+            <li>
+                <a href="#rugassistant">Rug Assistant</a>
+            </li>
+
+            <li>
+                <a href="#miscwayfair">Toolkit</a>
+            </li>
+
+            <li>
+                <a href="#xinrigtool">Rig Tool</a>
+            </li>
+
+            <li>
+                <a href="#splineik">Spline IK</a>
+            </li>
+
+            <li>
+                <a href="#graphicsprogramming">OpenGL</a>
+            </li>
+        
             <li>
                 <a href="/assets/BrianTam-WayfairResume.pdf" target="_blank">Resume</a>
             </li>
