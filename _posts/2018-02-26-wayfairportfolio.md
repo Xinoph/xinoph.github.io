@@ -22,7 +22,8 @@ lanes: [
 
 wfrug: [
     [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows how easy it is to use!"],
-    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"]
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene view"],
+    [BLMT6946-r0.jpg, "The final lane shot of this rug generated using the assistant"]
 ]
 
 wfscripts: [
