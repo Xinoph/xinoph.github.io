@@ -30,9 +30,15 @@ wfruglane: [
 ]
 
 wfscripts: [
-    [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options"],
-    [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings"],
-    [vfbccpreset.png, "A simple UI is used to save & load VFB Color Correction presets"]
+    [tracemirror.gif, "Demo of the trace mirror script. It draws a box in the viewport to approximate a mirror's reflection to help stylists & artists place objects", 0px],
+    [meshlight.gif, "Comparison of creating a mesh light manually to using the script.<br>60 seconds versus 10 seconds!", 160px],
+    [GIOverrideMaterials.jpg, "Example showing the usefulness of the Black GI Override.<br>Image provided by Shane O'Shea", 55px],
+    [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options", 0px],
+    [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings", 0px]
+]
+
+wfscriptsa: [
+    [vfbccpreset.png, "A simple UI is used to save & load VFB Color Correction presets", 0px]
 ]
 
 xrt: [[xrt01, Easy to configure options],
@@ -128,18 +134,25 @@ Written in MAXScript for 3ds Max.
 <hr>
 <h3 id="miscwayfair">Other Artist Toolkit Scripts</h3>
 
-Smaller scripts that I have written for artists to use include
+Other scripts that I have written for artists include
 
+* Trace Mirror tool to help stylists & artists approximate a mirror's reflection without rendering
+* Easy Mesh Light script to speed up the creation of VRay Mesh Lights
+* Black GI Override for selected materials to help create darker shadows
 * Toolbar button to create a window light with appropriate light settings and render properties
 * Toolbar button to create a white card with appropriate render properties
-* Menu to quickly save/load VRay VFB color correction options
-* Improvements and fixes to existing toolkit scripts such as "VRay Fur Lister," "Autogenerate Light Select Elements," & "VRay Proxy Converter"
+* Menu to quickly save & load VRay VFB color correction options
+* Improvements and fixes to existing toolkit scripts such as "Prep for Deadline," "Organize Artist Scene", "VRay Fur Lister," "Autogenerate Light Select Elements," & "VRay Proxy Converter"
 
 Written in MAXScript for 3ds Max.
 
 <div class="project-images" id="slideshowwfscripts">
 {% for img in page.wfscripts %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+    <div class="divInGrid" style="max-width: 256px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}};"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+
+{% for img in page.wfscriptsa %}
+    <div class="divInGrid" style="max-width: 256px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}}; max-height: 256px;"></a><h5>{{img[1]}}</h5></div>
 {% endfor %}
 </div>
 
