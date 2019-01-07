@@ -10,80 +10,50 @@ permalink: wayfairportfolio/
 extra_css: /assets/css/projects.css
 
 lanes: [
-    FOME6228-r1,
-    HLDS7210-r1b,
-    BL21259-r2,
-    ANDV1770-r1,
-    ANDV3755-r1,
-    WRLO5719-r1b,
-    LGLY5715-r1c,
-    WLAO3857-r0
+    ROHE8992,
+    ADML8149,
+    WRLO3449,
+    RDBS8956,
+    ASTG8559,
+    HLDS7210
 ]
 
 wfrug: [
-    [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows its ease of use"],
-    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene"]
+    [rugassistantui.jpg, "An annotated image of the Rug Assistant's UI shows its ease of use", 14px],
+    [rug-closeup.jpg, "A close-up shot of the generated binding & fur as seen in the scene", 0px],
+    [BLMT6946.jpg, "The final lane shot of this rug generated using the assistant", 44px]
 ]
 
-wfruglane: [
-    [BLMT6946-r0.jpg, "The final lane shot of this rug generated using the assistant"]
+wfpropset: [
+    [PropSetExample-Outdoor.png, ],
+    [PropSetExample-Bookshelf.png, ]
 ]
 
 wfscripts: [
-    [tracemirror.gif, "Demo of the trace mirror script. It draws a box in the viewport to approximate a mirror's reflection to help stylists & artists place objects", 0px],
-    [meshlight.gif, "Comparison of creating a mesh light manually to using the script.<br>60 seconds versus 10 seconds!", 160px],
-    [GIOverrideMaterials.jpg, "Example showing the usefulness of the Black GI Override.<br>Image provided by Shane O'Shea", 55px],
-    [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options", 0px],
-    [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings", 0px]
+    [quickrender.jpg, "A quick 2 minute render shows enough detail to give art direction for styling changes, which saves considerable time compared to waiting for the artist's final render", 32px],
+    [meshlight.gif, "Comparison of creating a mesh light manually to using the script.<br>60 seconds versus 10 seconds!", 0px]
 ]
 
 wfscriptsa: [
-    [vfbccpreset.png, "A simple UI is used to save & load VFB Color Correction presets", 0px]
+    [tracemirror.gif, "Demo of the trace mirror script. It draws a box in the viewport to approximate a mirror's reflection to help stylists & artists place objects", 0px],
+    [windowlight.gif, "Demo of the window light macro. It creates a light with appropriate color, directionality, & options", 59px],
+    [whitecard.gif, "Demo of the white card macro. It creates a card at the selection with appropriate render settings", 59px]
 ]
 
-xrt: [[xrt01, Easy to configure options],
-              [xrt02, Automatically generate curves based on existing joints],
-              [xrt03, Sets up the connections between curves and joints],
-              [xrt04, Different head follow options],
-              [xrt05, FK / IK switch with interpolation],
-              [xrt06, Hand controls based on number of fingers]
-              ]
-
-xpm: [[xpm01, PyMEL tool for creating vertex-based particle emitters],
-              [xpm02, Select emission vertices & press the button to create the emitter mesh],
-              [xpm03, Automatic subdivision of silhouette edges allows for tighter particle placement],
-              [xpm04, Particle emission using generated shape in Unity3D],
-              [xpm05, Particles applied to a model from the Dota 2 Workshop examples]
-              ]
-
-splineik: [[spline01, Easy to configure splines],
-              [spline03, The mesh can snap directly to the curve],
-              [spline02, The mesh can interpolate along the curve's length],
-              [spline04, Spline IK system on the Flying Spaghetti Monster's tentacles],
-              [spline05, The splines & control points driving the system]
-              ]
-
-acglr: [
-    [radiosity.gif, Animation of light & color bleeding calculation using a Radiosity algorithm],
-    [radiosity-withSphere.png, Render using Radiosity with the addition of a white sphere],
-    [raytrace-shadowsAndAA.png, "Raytracing with reflections, soft shadows, and antialiasing"]
-]
-
-acgmm: [
-    [subdivisionBunny.gif, Loop Subdivision Rules (mesh smoothing) applied to the Stanford Bunny],
-    [bunnyByeBye.gif, Edge collapse Operations (decimation) performed on the Stanford Bunny]
-]
 
 ---
 {% include JB/setup %}
 
 {% assign images_prefix = "/assets/images/Wayfair/2k/" %}
 
-<h3 id="fastlanes">Fast Lanes</h3>
+<h3 id="renders">Renders</h3>
 <div class="project-images" id="slideshow">
+<a href="/assets/images/Wayfair/BrianTam_ElephantRoom.jpg"><img src="/assets/images/Wayfair/BrianTam_ElephantRoom.jpg" class="img-responsive" style="max-height: 880px; max-width: 723px"></a><h5 style="margin-top: 0px;">Submission for "Life in the Fast Lane" Challenge</h5>
+
 {% for img in page.lanes %}
     <a href="{{images_prefix}}{{img}}.jpg"><img src= "{{images_prefix}}{{img}}.jpg" class="img-responsive"></a>
 {% endfor %}
+
 </div>
 
 <script>
@@ -92,35 +62,51 @@ acgmm: [
 
 &nbsp;
 
+{% assign images_prefix = "/assets/images/Wayfair/scripts/" %}
+<hr>
+<h3 id="propsets">Prop Sets</h3>
+
+Prop Sets is a tool for stylists to create scenes for Swap-In 3.0.
+
+In conjunction with the WAM, the tool gives stylists an easy interface to pick swap props for their scenes.
+
+There are up to 5 distinct sets with 5 individual swap props in each, leading to the possibility of 3,125 unique images!
+
+<div class="project-images" id="slideshowwfpropset">
+    <a href="{{images_prefix}}propsets.jpg"><img src="{{images_prefix}}propsets.jpg" class="img-responsive" style="max-height: 880px; max-width: 723px"></a><h5 style="margin-top: 0px;">The tool shows all the chosen swap props in a grid. It is easy for stylists to visualize the possible swap sets and make changes if necessary. This example would have 75 possible swap-in scenes!</h5>
+{% for img in page.wfpropset %}
+    <div class="divInGrid" style="max-width: 360px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+</div>
+
+<script>
+    $('#slideshowwfpropset').photobox('a', {history:false, time:0, counter:false});
+</script>
+
 <hr>
 <h3 id="rugassistant">Rug Assistant</h3>
 
-The Rug Assistant is an Artist Toolkit script that helps generate realistic rugs.
+The Rug Assistant is a script that helps generate realistic rugs.
 
 It has 3 main components
 
 * Binding generation with different shape options
-* Noise variation with standardized settings
+* Noise variation with standardized settings based on rug type
 * Fur generation from presets
 
 
-Tom Walker wrote the bulk of the binding generation while I added generation from edge selection and also optimized and fixed parts of the script.
+This tool is constantly updated as the team achieves new techniques towards photorealism.
 
-I wrote the parts for the noise variation and fur generation.
+Updates include
 
-Written in MAXScript for 3ds Max.
-
-<div style='position:relative;padding-bottom:54%'><iframe src='https://gfycat.com/ifr/AnchoredFamiliarIsabellineshrike' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></iframe></div>
-
-{% assign images_prefix = "/assets/images/Wayfair/scripts/" %}
+* A more accurate and customizable binding shape and material
+* Wrinkle variations based on how the real SKU is constructed
+* Fur variations and movement to imply a lived-in product
 
 <div class="project-images" id="slideshowwfrug">
+    <a href="{{images_prefix}}rugassistant-demo.gif"><img src="{{images_prefix}}rugassistant-demo.gif" class="img-responsive" style="max-height: 880px; max-width: 723px"></a>
 {% for img in page.wfrug %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
-
-{% for img in page.wfruglane %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: 53px;"></a><h5>{{img[1]}}</h5></div>
+    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}};"></a><h5>{{img[1]}}</h5></div>
 {% endfor %}
 </div>
 
@@ -128,218 +114,46 @@ Written in MAXScript for 3ds Max.
     $('#slideshowwfrug').photobox('a', {history:false, time:0, counter:false});
 </script>
 
-<h5>Code Sample:</h5>
-<pre data-src="/assets/codesamples/rugassistant.ms" class="language-clike line-numbers"></pre>
+<hr>
+<h3 id="liquidtool">Fill With Liquid Tool</h3>
+
+Fill With Liquid Tool helps stylist and artists generate the proper geometry for liquid inside of glasses.
+
+* It easily creates the liquid geometry based on the container's shape and automatically adjusts it for VRay to render the liquid touching the container properly.
+* The height of the liquid is always adjustable and level to the ground
+
+<div class="project-images" id="slideshowwfliquid">
+    <a href="{{images_prefix}}fillwithliquid.gif"><img src="{{images_prefix}}fillwithliquid.gif" class="img-responsive"></a><h5 style="margin-top: 0px;">A demo of the tool shows its speed and ease of use</h5>
+    <a href="{{images_prefix}}fillwithliquid-variety.png"><img src="{{images_prefix}}fillwithliquid-variety.png" class="img-responsive"></a><h5 style="margin-top: 0px;">This works for any container: cups, mugs, bowls, glasses, and even rotated bottles!</h5>
+</div>
+
+<script>
+    $('#slideshowwfliquid').photobox('a', {history:false, time:0, counter:false});
+</script>
 
 <hr>
-<h3 id="miscwayfair">Other Artist Toolkit Scripts</h3>
+<h3 id="miscwayfair">Other Toolkit Scripts</h3>
 
 Other scripts that I have written for artists include
 
-* Trace Mirror tool to help stylists & artists approximate a mirror's reflection without rendering
+* Stylist Quick Render to help stylists and art directors to view a scene with basic lighting in order to facilitate art direction.
 * Easy Mesh Light script to speed up the creation of VRay Mesh Lights
-* Black GI Override for selected materials to help create darker shadows
+* Trace Mirror tool to help stylists & artists approximate a mirror's reflection without rendering
 * Toolbar button to create a window light with appropriate light settings and render properties
 * Toolbar button to create a white card with appropriate render properties
-* Menu to quickly save & load VRay VFB color correction options
 * Improvements and fixes to existing toolkit scripts such as "Prep for Deadline," "Organize Artist Scene", "VRay Fur Lister," "Autogenerate Light Select Elements," & "VRay Proxy Converter"
-
-Written in MAXScript for 3ds Max.
 
 <div class="project-images" id="slideshowwfscripts">
 {% for img in page.wfscripts %}
+    <div class="divInGrid" style="max-width: 360px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}};"></a><h5>{{img[1]}}</h5></div>
+{% endfor %}
+<br>
+{% for img in page.wfscriptsa %}
     <div class="divInGrid" style="max-width: 256px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}};"></a><h5>{{img[1]}}</h5></div>
 {% endfor %}
-
-{% for img in page.wfscriptsa %}
-    <div class="divInGrid" style="max-width: 256px;"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}" alt="{{img[1]}}" class="img-responsive" style="padding-top: {{img[2]}}; max-height: 256px;"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
 </div>
+
 
 <script>
     $('#slideshowwfscripts').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-<h5>Code Sample:</h5>
-<pre data-src="/assets/codesamples/btammacros.ms" class="language-clike line-numbers"></pre>
-<hr>
-<h3 id="xinrigtool">Xin Rig Tool</h3>
-An automatic rig generating tool for humanoid characters for Maya. 
-
-Contains functions to help with the manual rigging of non-humanoid characters. 
-
-Written in Python for Maya.  
-
-<div class="video-wrapper">
-    <iframe src="//player.vimeo.com/video/116376565" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
-
-
-{% assign images_prefix = "/assets/images/XinRigTool/" %}
-{% assign thumbnails = true %}
-
-<div class="project-images" id="slideshowxrt">
-{% for img in page.xrt %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
-</div>
-
-<script>
-    $('#slideshowxrt').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-<h5>Code Sample:</h5>
-<pre data-src="/assets/codesamples/xinrigtool.py" class="language-python line-numbers"></pre>
-
-<hr>
-<h3 id="xinpm">Xin Particle Mesher</h3>
-A tool that generates the mesh used for vertex-based particle effects.
-
-Vertices on the input mesh that should emit particles are selected, and a new mesh is generated.
-
-A simple button click generates additional vertices along the origin edges that allows for a tighter particle system.
-
-Written in Python for Maya.
-
-<div class="video-wrapper">
-    <iframe src="//player.vimeo.com/video/129827346" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
-
-{% assign images_prefix = "/assets/images/XPM/" %}
-{% assign thumbnails = true %}
-
-<div class="project-images" id="slideshowxpm">
-{% for img in page.xpm %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
-</div>
-
-<script>
-    $('#slideshowxpm').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-
-<h5>Code Sample:</h5>
-<pre data-src="/assets/codesamples/xinpm.py" class="language-python line-numbers"></pre>
-
-<hr>
-<h3 id="splineik">Spline IK for Unity</h3>
-An inverse kinematic system that uses splines to determine joint locations. This allows for natural looking movement while also being easy to configure.
-
-Just move a control’s transform, and the mesh follows!
-
-Written in C# for Unity3D.
-
-<div class="video-wrapper">
-    <iframe src="//player.vimeo.com/video/116376258" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-</div>
-
-
-{% assign images_prefix = "/assets/images/SplineIK/" %}
-{% assign thumbnails = true %}
-
-<div class="project-images" id="slideshowsplineik">
-{% for img in page.splineik %}
-    <div class="divInGrid" style="max-width: 256px"><a href="{{images_prefix}}{{img[0]}}.png"><img src= "{{images_prefix}}{{img[0]}}{% if thumbnails %}-tn{% endif %}.png" alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
-</div>
-
-<script>
-    $('#slideshowsplineik').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-<h5>Code Sample:</h5>
-<pre data-src="/assets/codesamples/splineik.cs" class="language-csharp line-numbers"></pre>
-
-<hr>
-<h3 id="graphicsprogramming">Graphics Programming with OpenGL</h3>
-Various examples that show different aspects & techniques of computer graphics.
-
-The code is written in C++ using OpenGL 3.2.
-
-{% assign images_prefix = "/assets/images/ACG/" %}
-<h4>Lighting & Rendering</h4>
-<div class="project-images" id="slideshowacglr">
-{% for img in page.acglr %}
-    <div class="divInGrid" style="max-width: 280px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive" style="max-width: 280px"></a><h5>{{img[1]}}</h5>
-    </div>
-{% endfor %}
-</div>
-
-<h5>Code Samples:</h5>
-<pre data-src="/assets/codesamples/radiosity.cpp" class="language-cpp line-numbers"></pre>
-
-<pre data-src="/assets/codesamples/raytracer.cpp" class="language-cpp line-numbers"></pre>
-
-<script>
-    $('#slideshowacglr').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-
-<h4>Mesh Manipulation</h4>
-<div class="project-images" id="slideshowacgmm">
-{% for img in page.acgmm %}
-    <div class="divInGrid" style="max-width: 360px"><a href="{{images_prefix}}{{img[0]}}"><img src= "{{images_prefix}}{{img[0]}}"  alt="{{img[1]}}" class="img-responsive"></a><h5>{{img[1]}}</h5></div>
-{% endfor %}
-</div>
-
-<script>
-    $('#slideshowacgmm').photobox('a', {history:false, time:0, counter:false});
-</script>
-
-<h5>Code Samples:</h5>
-
-<pre data-src="/assets/codesamples/subdivision.cpp" class="language-cpp line-numbers"></pre>>
-
-<pre data-src="/assets/codesamples/edgecollapse.cpp" class="language-cpp line-numbers"></pre>
-
-&nbsp;
-
-{%comment%}
-<script>
-Prism.plugins.toolbar.registerButton('select-code', function(env) {
-    var button = document.createElement('button');
-    button.innerHTML = 'Select Code';
-
-    button.addEventListener('click', function () {
-        // Source: http://stackoverflow.com/a/11128179/2757940
-        if (document.body.createTextRange) { // ms
-            var range = document.body.createTextRange();
-            range.moveToElementText(env.element);
-            range.select();
-        } else if (window.getSelection) { // moz, opera, webkit
-            var selection = window.getSelection();
-            var range = document.createRange();
-            range.selectNodeContents(env.element);
-            selection.removeAllRanges();
-            selection.addRange(range);
-        }
-    });
-
-    return button;
-});
-</script>
-{%endcomment%}
-
-<script>
-Prism.plugins.toolbar.registerButton('expand-code', function(env) {
-    var button = document.createElement('button');
-    button.innerHTML = 'Expand Code';
-
-    button.addEventListener('click', function () {
-        var p = env.element.parentElement;
-        maxh = "50em";
-        h = p.style.maxHeight;
-        if (h == maxh) {
-            h = "8em";
-            button.innerHTML = 'Expand Code';
-        } else {
-            h = maxh;
-            button.innerHTML = 'Collapse Code';
-        }
-        p.style.maxHeight = h;
-    });
-
-    return button;
-});
 </script>

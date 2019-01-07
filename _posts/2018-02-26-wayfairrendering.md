@@ -10,21 +10,19 @@ permalink: projects/3d/wayfairrendering/
 extra_css: /assets/css/projects.css
 
 lanes: [
-    FOME6228-r1,
-    HLDS7210-r1b,
-    BL21259-r2,
-    ANDV1770-r1,
-    ANDV3755-r1,
-    WRLO5719-r1b,
-    LGLY5715-r1c,
-    WLAO3857-r0
+    ROHE8992,
+    ADML8149,
+    WRLO3449,
+    RDBS8956,
+    ASTG8559,
+    HLDS7210
 ]
 
 
 ---
 {% include JB/setup %}
 
-{% assign images_prefix = "/assets/images/Wayfair/" %}
+{% assign images_prefix = "/assets/images/Wayfair/2k/" %}
 
 
 <h3>Overview</h3>
